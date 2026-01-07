@@ -3,101 +3,120 @@
 **SAP UI5 & FIORI DEVELOPER | FULL-STACK ENGINEER | AI ENTHUSIAST**
 
 <p align="center">
-<img src="[https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=AMEEN%20KHAN&fontSize=80&animation=fadeIn&fontAlignY=35&theme=radical](https://www.google.com/search?q=https://capsule-render.vercel.app/api%3Ftype%3Dwaving%26color%3Dgradient%26height%3D200%26section%3Dheader%26text%3DAMEEN%2520KHAN%26fontSize%3D80%26animation%3DfadeIn%26fontAlignY%3D35%26theme%3Dradical)" />
+<img src="[https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=AMEEN%20KHAN&fontSize=80&animation=fadeIn&fontAlignY=35&theme=radical](https://www.google.com/search?q=https://capsule-render.vercel.app/api%3Ftype%3Dwaving%26color%3Dgradient%26height%3D220%26section%3Dheader%26text%3DAMEEN%2520KHAN%26fontSize%3D80%26animation%3DfadeIn%26fontAlignY%3D35%26theme%3Dradical)" />
 </p>
 
 ---
 
-### 🚀 Level Up: Professional Summary
+### 🚀 Professional Mastery
 
-Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC architecture** and modern web standards. Expert in crafting custom enterprise applications using **SAP Business Application Studio (BAS)** and **VS Code**. Specialized in bridging frontend interfaces with **OData services** via **SAP NetWeaver Gateway**.
+Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC architecture** and modern web standards. I possess hands-on experience developing custom UI5 applications using **SAP Business Application Studio (BAS)** and **VS Code**. I specialize in bridging frontend interfaces with **OData services** via **SAP NetWeaver Gateway** and am proficient in mapping UI elements with Entity/Entity Sets.
 
 ---
 
 ### 🛠️ Tech Arsenal
 
-**💠 SAP Core Ops**
+**💠 SAP Enterprise Suite**
 
 * 
-**Frameworks:** SAPUI5, SAP Fiori 
-
-
-* 
-**Integration:** OData Service Modeling, ABAP Foundations, SAP NW Gateway 
+**Frameworks:** SAPUI5 and SAP Fiori.
 
 
 * 
-**Architecture:** XML Views, Data Binding, Routing, Fragments 
-
-
-
-**⚡ Frontend & Logic**
-
-* 
-**Languages:** JavaScript (ES6+), TypeScript, HTML5, CSS3 
+**Integration:** OData Service Modeling and consumption via SAP NW Gateway.
 
 
 * 
-**Frameworks:** React.js, Angular, Node.js, Flask 
+**Core Concepts:** XML Views, Controllers, Data Binding, Routing, Fragments, and i18n.
 
 
 * 
-**Databases:** MongoDB, Oracle 
+**Backend:** ABAP (Foundational).
 
 
 
-**⚙️ Developer Tools**
-
-* 
-**IDEs:** SAP Business Application Studio, VS Code, SAP GUI 
-
+**⚡ Web & Logic**
 
 * 
-**Version Control:** Git, Bitbucket 
+**Languages:** JavaScript (ES6+), HTML5, CSS3, JSON , TypeScript , and Python.
 
 
 * 
-**Cloud:** AWS Cloud Virtual Internship 
+**Frameworks:** React.js , Angular , Node.js , and Flask.
+
+
+* 
+**Databases:** MongoDB , Oracle, and MySQL.
+
+
+
+**⚙️ Development Environment**
+
+* 
+**IDEs:** SAP Business Application Studio , VS Code , and SAP GUI.
+
+
+* 
+**Version Control:** Git and Bitbucket.
+
+
+* 
+**Infrastructure:** AWS Cloud (Virtual Internship).
 
 
 
 ---
 
-### 📁 Quests (Projects)
+### 📁 Mission Logs (Major Projects)
 
-**⚔️ RASAD — Player Metrics Dashboard**
+**⚔️ RASAD — Player Metrics Dashboard (SAP UI5 & OData)**
 
-* Developed a professional SAP Fiori application for performance data analysis.
-
-
-* Integrated ABAP OData services for real-time metrics.
+* Developed a professional SAP Fiori application to manage and analyze performance data.
 
 
-* Deployed full **CRUD operations** and complex data binding.
+* Integrated with **ABAP OData services** to handle real-time enterprise data.
 
 
-* Applied **Fiori Design Guidelines** for a responsive, enterprise-grade UX.
+* Implemented full **CRUD operations**, complex Data Binding, and Routing.
 
 
-
-**⚔️ Vehicle Engine Health Predictor**
-
-* Engineered a predictive maintenance tool utilizing **Flask**.
-
-
-* Implemented **Deep Learning** models including CNN, LSTM, and XGBoost.
-
-
-* Created a real-time health monitoring interface to minimize vehicle downtime.
+* Followed **Fiori Design Guidelines** for a responsive, enterprise-grade UX.
 
 
 
-**⚔️ Dairy Farm Management System**
+**⚔️ Game Specification Platform (React.js & MongoDB)**
 
-* Built an **Angular** management portal to digitize inventory and operations.
+* Built a dynamic web platform utilizing **React.js** for high-performance frontend delivery.
 
 
-* Utilized **Component-based Architecture** for high reusability.
+* Managed flexible data storage through **MongoDB** integration.
+
+
+* Focused on state management and **Responsive Web Design** for cross-device compatibility.
+
+
+* Streamlined data retrieval processes to improve specification lookup speeds.
+
+
+
+**⚔️ Vehicle Engine Health Predictor (Deep Learning & Flask)**
+
+* Engineered a predictive maintenance tool using the **Flask** framework.
+
+
+* Integrated **Deep Learning** models (CNN, LSTM, XGBoost) to analyze sensor data.
+
+
+* Designed a real-time monitoring interface to reduce vehicle downtime.
+
+
+
+**⚔️ Dairy Farm Management System (Angular & Oracle)**
+
+* Created a management portal using the **Angular Framework** to digitize operations.
+
+
+* Utilized **Component-based Architecture** and TypeScript for modular, maintainable code.
 
 
 
@@ -118,13 +137,18 @@ Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC
 
 ### 📡 Network & Intel
 
-* 🔭 **Current Objective:** Refining **RASAD** with custom validation and responsive design.
+* 🔭 **Current Objective:** Refining **RASAD** with custom validation and responsive UX design.
 
 
-* 🌱 **Skill Tree:** Advanced OData modeling and SAP Fiori Launchpad management.
+* 🌱 **Skill Tree:** Advanced OData modeling and SAP Fiori Launchpad management (Tiles, Catalogs, Groups).
 
 
-* 👯 **Co-op:** Open for collaborations on Open Source SAP projects.
+* 💬 **Knowledge Base:** Proficient in **UI5 Debugging** and **Code Inspector** tools.
+
+
+* 🎓 **Education:** B.Tech in Computer Science Engineering (CGPA: 8.08).
+
+
 
 <p align="left">
 <a href="[https://linkedin.com/in/ameen-ul-hassan-khan-420532284](https://linkedin.com/in/ameen-ul-hassan-khan-420532284)" target="_blank">
@@ -139,3 +163,4 @@ Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC
 </p>
 
 <p align="right"><i>Profile Visitors:</i> <img src="[https://visitcount.itsvg.in/api?id=ameenkhan1715&icon=0&color=0](https://visitcount.itsvg.in/api?id=ameenkhan1715&icon=0&color=0)" /></p>
+

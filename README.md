@@ -1,4 +1,4 @@
-# 🕹️ Ameen Ul Hassan Khan
+# 🕹️ AMEEN UL HASSAN KHAN
 
 **SAP UI5 & FIORI DEVELOPER | FULL-STACK ENGINEER | AI ENTHUSIAST**
 
@@ -8,140 +8,86 @@
 
 ---
 
-### 🚀 Professional Mastery
+### 🚀 PROFESSIONAL MASTERY
 
 Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC architecture**. I possess hands-on experience developing custom UI5 applications using **SAP Business Application Studio (BAS)** and **VS Code**. I specialize in bridging frontend interfaces with **OData services** via **SAP NetWeaver Gateway** and am proficient in mapping UI elements with Entity/Entity Sets.
 
 ---
 
-### 🛠️ Tech Arsenal
+### 🛠️ TECH ARSENAL
 
-**💠 SAP Enterprise Suite**
+**💠 SAP ENTERPRISE SUITE**
 
-* 
-**Frameworks:** SAPUI5 and SAP Fiori.
+* **Frameworks:** SAPUI5, SAP Fiori
+* **Integration:** OData Service Modeling, SAP NW Gateway (SEGW) consumption
+* **Core Logic:** XML Views, Controllers, Data Binding, Routing, Fragments, and i18n
+* **Backend:** ABAP (Foundational)
 
+**⚡ FULL-STACK & WEB**
 
-* 
-**Integration:** OData Service modeling and consumption via SAP NW Gateway.
+* **Languages:** JavaScript (ES6+), TypeScript, HTML5, CSS3, JSON, Python
+* **Frameworks:** React.js, Angular, Node.js, Flask
+* **Databases:** MongoDB, Oracle, MySQL
 
+**⚙️ DEV TOOLS & CLOUD**
 
-* 
-**Core Concepts:** XML Views, Controllers, Data Binding, Routing, Fragments, and i18n.
-
-
-* 
-**Backend:** ABAP (Foundational).
-
-
-
-**⚡ Web & Logic**
-
-* 
-**Languages:** JavaScript (ES6+), HTML5, CSS3, JSON , TypeScript , and Python.
-
-
-* 
-**Frameworks:** React.js , Angular , Node.js , and Flask.
-
-
-* 
-**Databases:** MongoDB and Oracle.
-
-
+* **Environments:** SAP BAS, VS Code, SAP GUI
+* **Version Control:** Git, Bitbucket
+* **Certifications:** AWS Cloud Virtual Internship (Eduskills), AI Internship (AICTE)
 
 ---
 
-### 📂 Mission Logs (Full Project Portfolio)
+### 📁 MISSION LOGS (PROJECT PORTFOLIO)
 
-**⚔️ RASAD — Player Metrics Dashboard (SAP UI5 & OData)** 
+**⚔️ RASAD — PLAYER METRICS DASHBOARD**
 
+* **Tech:** SAP UI5, Fiori, ABAP OData
 * Developed a professional SAP Fiori application to manage and analyze performance data integrated with ABAP OData services.
-
-
 * Implemented full **CRUD operations**, complex Data Binding, and Routing for a seamless user experience.
-
-
 * Applied **Fiori Design Guidelines** to create a responsive, enterprise-grade dashboard.
 
+**⚔️ GAME SPECIFICATION PLATFORM**
 
-
-**⚔️ Game Specification Platform (React.js & MongoDB)** 
-
+* **Tech:** React.js, MongoDB
 * Built a dynamic web platform utilizing **React.js** for high-performance frontend delivery.
-
-
 * Managed flexible data storage through **MongoDB** integration.
-
-
 * Focused on state management and **Responsive Web Design** for cross-device compatibility.
 
+**⚔️ VEHICLE ENGINE HEALTH PREDICTOR**
 
-* Streamlined data retrieval processes, improving the speed of specification lookups.
-
-
-
-**⚔️ Dairy Farm Management System (Angular & Oracle)** 
-
-* Created a management portal using the **Angular Framework** to digitize operations and inventory tracking.
-
-
-* Utilized **Component-based Architecture** and TypeScript to build reusable UI elements.
-
-
-* Enhanced user engagement by implementing interactive dashboards using HTML5 and CSS3.
-
-
-
-**⚔️ Vehicle Engine Health Predictor (Deep Learning & Flask)** 
-
+* **Tech:** Deep Learning, Flask, Python
 * Engineered a predictive maintenance tool using **Flask** to detect engine faults before they occur.
-
-
-* Integrated advanced **Machine Learning** models (CNN, LSTM, XGBoost) to analyze sensor data.
-
-
+* Integrated advanced **Machine Learning** models (**CNN, LSTM, XGBoost**) to analyze sensor data.
 * Provided a user-friendly interface for real-time health monitoring aimed at reducing downtime.
 
+**⚔️ DAIRY FARM MANAGEMENT SYSTEM**
 
-
----
-
-### 🎓 Academic Record
-
-| Degree | Institution | Timeline | Performance |
-| --- | --- | --- | --- |
-| <br>**B.Tech in Computer Science Engineering** 
-
- | Narasaraopeta Engineering College 
-
- | 2021 – 2025 
-
- | <br>**CGPA: 8.08** 
-
- |
-| <br>**Intermediate (MPC)** 
-
- | Sri Sai Junior College 
-
- | 2019 
-
- | <br>**CGPA: 6.60** 
-
- |
-| <br>**Secondary School (SSC)** 
-
- | Bhashyam High School 
-
- | 2018 
-
- | <br>**CGPA: 9.0** 
-
- |
+* **Tech:** Angular, Oracle
+* Created a management portal using the **Angular Framework** to digitize operations and inventory tracking.
+* Utilized **Component-based Architecture** and TypeScript to build reusable UI elements.
 
 ---
 
-### 📊 Performance Stats
+### 🎓 ACADEMIC RECORD
+
+**🏛️ B.TECH IN COMPUTER SCIENCE ENGINEERING**
+
+* Narasaraopeta Engineering College | 2021 – 2025
+* **Performance: 8.08 CGPA**
+
+**🏛️ INTERMEDIATE (MPC)**
+
+* Sri Sai Junior College | 2019
+* **Performance: 6.60 CGPA**
+
+**🏛️ SECONDARY SCHOOL (SSC)**
+
+* Bhashyam High School | 2018
+* **Performance: 9.0 CGPA**
+
+---
+
+### 📊 PERFORMANCE STATS
 
 <p align="center">
 <img src="[https://github-readme-stats.vercel.app/api?username=ameenkhan1715&theme=radical&show_icons=true&hide_border=true&count_private=true](https://github-readme-stats.vercel.app/api?username=ameenkhan1715&theme=radical&show_icons=true&hide_border=true&count_private=true)" width="48%" />
@@ -154,17 +100,11 @@ Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC
 
 ---
 
-### 📡 Network & Intel
+### 📡 NETWORK & INTEL
 
-* 🔭 **Current Project:** Developed **RASAD** featuring custom validation and responsive UX design.
-
-
+* 🔭 **Current Project:** Refining **RASAD** with custom validation and responsive UX design.
 * 🌱 **Skill Tree:** Advanced OData modeling and SAP Fiori Launchpad management (Tiles, Catalogs, Groups).
-
-
 * 💬 **Knowledge Base:** Proficient in **SAPUI5 Debugging** and **Code Inspector** tools.
-
-
 
 <p align="left">
 <a href="[https://linkedin.com/in/ameen-ul-hassan-khan-420532284](https://linkedin.com/in/ameen-ul-hassan-khan-420532284)" target="_blank">

@@ -95,5 +95,3 @@ Aspiring **SAP UI5 Fiori Developer** with a high-performance foundation in **MVC
 <img src="[https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=white](https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=white)" />
 </a>
 </p>
-
-<p align="right"><i>Profile Visitors:</i> <img src="[https://visitcount.itsvg.in/api?id=ameenkhan1715&icon=0&color=0](https://visitcount.itsvg.in/api?id=ameenkhan1715&icon=0&color=0)" /></p>

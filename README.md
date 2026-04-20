@@ -1,314 +1,1308 @@
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:003b00,100:00ff41&height=220&section=header&text=%3E%20AMEEN_UL_HASSAN_KHAN&fontSize=44&fontColor=00FF41&fontAlignY=42&desc=SAP-UI5%20%7C%20FIORI%20%7C%20FULL-STACK%20%7C%20AI%20ENGINEER&descSize=16&descAlignY=65&descColor=39D353&animation=fadeIn" width="100%"/>
-
-<img src="https://komarev.com/ghpvc/?username=ameenkhan5256&label=VISITORS&color=00FF41&style=flat-square" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-00FF41?style=flat-square&labelColor=0D0D0D" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/INDIA-🇮🇳-00FF41?style=flat-square&labelColor=0D0D0D" />
-
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=900&color=00FF41&background=00000000&center=true&vCenter=true&width=800&height=48&lines=root%40ameen%3A~%24+whoami;%3E+SAP+UI5+%26+Fiori+Developer...;root%40ameen%3A~%24+cat+roles.txt;%3E+OData+V2%2FV4+%26+SAP+Gateway+Expert...;%3E+MVC+Architecture+Specialist...;%3E+Full-Stack+Cloud+Engineer...;%3E+CNN+%26+LSTM+Deep+Learning+Engineer...;root%40ameen%3A~%24+echo+%24STATUS;%3E+OPEN_TO_OPPORTUNITIES%3Dtrue+%E2%9C%93" />
-
-<br/><br/>
-
-<a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284">
-  <img src="https://img.shields.io/badge/_%3E_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D" />
-</a>
-&nbsp;
-<a href="mailto:ameenkhan5256@gmail.com">
-  <img src="https://img.shields.io/badge/_%3E_EMAIL-00FF41?style=for-the-badge&logo=gmail&logoColor=00FF41&labelColor=0D0D0D" />
-</a>
-&nbsp;
-<a href="https://github.com/ameenkhan5256">
-  <img src="https://img.shields.io/badge/_%3E_GITHUB-FFFFFF?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0D" />
-</a>
-
-</div>
-
-<br/>
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
-## `// 01. SYSTEM.IDENTIFICATION`
-
-<img align="right" width="270" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
-
-```bash
-root@ameen:~$ cat /etc/developer.conf
-
-NAME       = "Ameen Ul Hassan Khan"
-LOCATION   = "Andhra Pradesh, India 🇮🇳"
-DEGREE     = "B.Tech CSE  |  8.08 CGPA"
-INSTITUTE  = "Narasaraopeta Engineering College"
-
-ROLE[0]    = "SAP UI5 & Fiori Developer"
-ROLE[1]    = "MVC Architecture Specialist"
-ROLE[2]    = "OData V2/V4 + Gateway Expert"
-ROLE[3]    = "Full-Stack Engineer"
-ROLE[4]    = "Deep Learning Engineer (CNN/LSTM)"
-
-SAP_TOOLS  = ["BAS","NetWeaver","Gateway","Launchpad"]
-STATUS     = "OPEN_TO_OPPORTUNITIES ✓"
-MISSION    = "Build enterprise-grade seamless UX"
-
-root@ameen:~$ █
-```
-
-<br clear="right"/>
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
-## `// 02. TECH.STACK ── MODULES LOADED`
-
-```bash
-root@ameen:~$ import --all modules && echo "OK"
-```
-
-<div align="center">
-
-**`[ SAP ECOSYSTEM ]`**
-
-<img src="https://img.shields.io/badge/SAP_UI5-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/SAP_FIORI-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/SAP_BAS-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/OData_V2/V4-►_LOADED-00FF41?style=flat-square&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/ABAP-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/SAP_GATEWAY-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/FIORI_LAUNCHPAD-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/SAP_BTP-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
-
-<br/><br/>
-
-**`[ FRONTEND ]`**
-
-<img src="https://skillicons.dev/icons?i=js,ts,html,css,react,angular&theme=dark&perline=6" />
-
-<br/><br/>
-
-**`[ BACKEND & DATABASE ]`**
-
-<img src="https://skillicons.dev/icons?i=nodejs,python,flask,mongodb,mysql,aws&theme=dark&perline=6" />
-
-<br/><br/>
-
-**`[ DEVOPS & TOOLS ]`**
-
-<img src="https://skillicons.dev/icons?i=git,github,bitbucket,vscode,figma&theme=dark&perline=5" />
-
-<br/><br/>
-
-**`[ AI / ML ENGINE ]`**
-
-<img src="https://img.shields.io/badge/TensorFlow-►_ACTIVE-FF6F00?style=flat-square&logo=tensorflow&logoColor=FF6F00&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/Keras-►_ACTIVE-D00000?style=flat-square&logo=keras&logoColor=D00000&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/CNN-►_ACTIVE-00FF41?style=flat-square&logo=python&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/LSTM-►_ACTIVE-00FF41?style=flat-square&logo=python&logoColor=00FF41&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/NumPy-►_ACTIVE-4DABCF?style=flat-square&logo=numpy&logoColor=4DABCF&labelColor=0D0D0D" />
-<img src="https://img.shields.io/badge/Pandas-►_ACTIVE-E70488?style=flat-square&logo=pandas&logoColor=E70488&labelColor=0D0D0D" />
-
-</div>
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
-## `// 03. PROJECT.ARCHIVES ── DECRYPTING`
-
-```bash
-root@ameen:~$ ls -la ~/projects/
-```
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────┐
-│  [PROJ-01] :: RASAD                  │
-│  STATUS  : ██████████  ACTIVE        │
-│  TYPE    : SAP Enterprise App        │
-└──────────────────────────────────────┘
-```
-<img src="https://img.shields.io/badge/SAP_UI5-0FAAFF?style=flat-square&logo=sap&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/Fiori-003366?style=flat-square&logo=sap&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/ABAP_OData-E44C30?style=flat-square&labelColor=0D0D0D"/>
-
-- `▸` Analytics via **ABAP OData services**
-- `▸` Full **CRUD** + complex view routing
-- `▸` Fiori Design Guidelines — enterprise UX
-- `▸` Custom validations + OData modeling
-- `▸` Mobile-first interface
-
-</td>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────┐
-│  [PROJ-02] :: ENGINE_HEALTH_AI       │
-│  STATUS  : ██████████  ACTIVE        │
-│  TYPE    : AI / Deep Learning        │
-└──────────────────────────────────────┘
-```
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/Flask-FFFFFF?style=flat-square&logo=flask&logoColor=black&labelColor=0D0D0D"/>
-
-- `▸` Real-time fault detection via **CNN & LSTM**
-- `▸` Predictive maintenance from sensor streams
-- `▸` AI-driven anomaly detection engine
-- `▸` Multi-class fault classification
-- `▸` Deployed REST API with **Flask**
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────┐
-│  [PROJ-03] :: GAME_SPEC_PLATFORM     │
-│  STATUS  : ████████░░  COMPLETE      │
-│  TYPE    : Full-Stack Web App        │
-└──────────────────────────────────────┘
-```
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=0D0D0D"/>
-
-- `▸` High-performance game spec portal
-- `▸` Advanced **State Management** layer
-- `▸` Dynamic filtering & comparison tools
-- `▸` Optimized component rendering
-
-</td>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────┐
-│  [PROJ-04] :: DAIRY_FARM_MGMT        │
-│  STATUS  : ████████░░  COMPLETE      │
-│  TYPE    : Enterprise Web App        │
-└──────────────────────────────────────┘
-```
-<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/Oracle_DB-F80000?style=flat-square&logo=oracle&logoColor=white&labelColor=0D0D0D"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white&labelColor=0D0D0D"/>
-
-- `▸` **Component-based** Angular + TS arch
-- `▸` Secure inventory via Oracle DB
-- `▸` Digitized operations platform
-- `▸` Role-based multi-user access
-
-</td>
-</tr>
-</table>
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
-## `// 04. SKILL.MATRIX ── BENCHMARK`
-
-```
-╔═══════════════════════════════════════════════════════════════════════╗
-║                   SKILL DIAGNOSTICS — BENCHMARK OUTPUT               ║
-╠══════════════════════════╦═══════════════════════════╦═══════════════╣
-║  MODULE                  ║  SCORE                    ║  LEVEL        ║
-╠══════════════════════════╬═══════════════════════════╬═══════════════╣
-║  SAP UI5 / Fiori         ║  ████████████████████░░   ║  [ 95/100 ]   ║
-║  OData V2 / V4           ║  ███████████████████░░░   ║  [ 90/100 ]   ║
-║  JavaScript / TypeScript ║  ███████████████████░░░   ║  [ 90/100 ]   ║
-║  ABAP / SAP Gateway      ║  █████████████████░░░░░   ║  [ 85/100 ]   ║
-║  React.js                ║  ████████████████░░░░░░   ║  [ 80/100 ]   ║
-║  Python / Deep Learning  ║  ███████████████░░░░░░░   ║  [ 75/100 ]   ║
-║  Angular                 ║  █████████████░░░░░░░░░   ║  [ 70/100 ]   ║
-║  MongoDB / Oracle DB     ║  ████████████░░░░░░░░░░   ║  [ 65/100 ]   ║
-╠══════════════════════════╩═══════════════════════════╩═══════════════╣
-║  >> All diagnostics passed. System operational. No failures.         ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
-## `// 05. EDU.LOG ── RECORDS VERIFIED`
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  root@ameen:~$ cat /var/log/education.log                           ║
-╠════════════════════════════════╦══════════════════╦═════════════════╣
-║  INSTITUTION                   ║  QUALIFICATION   ║  SCORE          ║
-╠════════════════════════════════╬══════════════════╬═════════════════╣
-║  Narasaraopeta Engg. College   ║  B.Tech CSE      ║  8.08 CGPA ★   ║
-║  [ 2021 — 2025 ]               ║  Computer Sci.   ║  ██████████     ║
-╠════════════════════════════════╬══════════════════╬═════════════════╣
-║  Sri Sai Junior College        ║  Intermediate    ║  6.60 CGPA      ║
-╠════════════════════════════════╬══════════════════╬═════════════════╣
-║  Bhashyam High School          ║  SSC (10th)      ║  9.0  GPA  ★    ║
-╚════════════════════════════════╩══════════════════╩═════════════════╝
-  >> Records parsed. No anomalies detected. ✓
-```
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
-## `// 06. MISSION.QUEUE ── CRON JOBS`
-
-```
-╔══════════════════════════════════════════════════════════════════════════╗
-║  root@ameen:~$ crontab -l                                               ║
-╠══════════════╦═══════════════════════════════════════════════════════════╣
-║  CRON_001    ║  🔭  Refining RASAD — advanced OData modeling             ║
-║              ║      and custom UX validation framework flows             ║
-╠══════════════╬═══════════════════════════════════════════════════════════╣
-║  CRON_002    ║  🌱  Mastering SAP Fiori Launchpad —                      ║
-║              ║      Tiles, Catalogs & Groups management                  ║
-╠══════════════╬═══════════════════════════════════════════════════════════╣
-║  CRON_003    ║  ⚡  SAPUI5 Debugging + Enterprise Performance            ║
-║              ║      Optimization and profiling techniques                ║
-╠══════════════╬═══════════════════════════════════════════════════════════╣
-║  CRON_004    ║  🤖  AI/ML integration within SAP BTP                     ║
-║              ║      and Fiori extension scenarios                        ║
-╚══════════════╩═══════════════════════════════════════════════════════════╝
-  >> 4 jobs active. 0 failed. System stable. ✓
-```
-
-<br/>
-
-<div align="center">
-
-```
-root@ameen:~$ ./connect --protocol=handshake
-> PING successful. Ready to collaborate.
-> Available channels: LinkedIn | Email | GitHub
-> Awaiting your message...
-```
-
-<br/>
-
-<a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284">
-  <img src="https://img.shields.io/badge/_%3E_CONNECT_VIA_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D" />
-</a>
-&nbsp;
-<a href="mailto:ameenkhan5256@gmail.com">
-  <img src="https://img.shields.io/badge/_%3E_SEND_EMAIL-00FF41?style=for-the-badge&logo=gmail&logoColor=00FF41&labelColor=0D0D0D" />
-</a>
-
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1200&color=00FF41&center=true&vCenter=true&width=700&lines=//+EOF+—+Thanks+for+reading+this+README.md;root%40ameen%3A~%24+logout+--save-session+%E2%96%88" />
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,60:003b00,100:000000&height=120&section=footer&animation=fadeIn" width="100%"/>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>AMEEN UL HASSAN KHAN — SAP Fiori Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --green: #00ff41;
+    --green-dim: #008f11;
+    --green-dark: #003b00;
+    --black: #000000;
+    --black2: #0a0a0a;
+    --black3: #0d0d0d;
+    --cyan: #00eaff;
+    --amber: #ffb300;
+    --red: #ff003c;
+    --white: #e0ffe0;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--green);
+    font-family: 'Share Tech Mono', monospace;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* CUSTOM CURSOR */
+  .cursor {
+    position: fixed;
+    width: 18px; height: 18px;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.1s;
+    box-shadow: 0 0 10px var(--green), 0 0 20px var(--green);
+  }
+  .cursor-dot {
+    position: fixed;
+    width: 5px; height: 5px;
+    background: var(--green);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    box-shadow: 0 0 6px var(--green);
+  }
+
+  /* MATRIX CANVAS */
+  #matrix-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    opacity: 0.13;
+  }
+
+  /* SCANLINES */
+  .scanlines {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,255,65,0.015) 2px,
+      rgba(0,255,65,0.015) 4px
+    );
+  }
+
+  /* CRT VIGNETTE */
+  .vignette {
+    position: fixed;
+    top:0; left:0; width:100%; height:100%;
+    z-index: 2;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center,
+      transparent 60%,
+      rgba(0,0,0,0.7) 100%
+    );
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    position: fixed;
+    top: 0; width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background: rgba(0,0,0,0.85);
+    border-bottom: 1px solid var(--green-dim);
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+  }
+  .nav-logo {
+    font-family: 'Orbitron', monospace;
+    font-size: 13px;
+    color: var(--green);
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px var(--green);
+  }
+  .nav-logo span { color: var(--cyan); }
+  .nav-links { display:flex; gap: 28px; }
+  .nav-links a {
+    color: var(--green-dim);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .nav-links a::before {
+    content: '> ';
+    color: var(--green);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover { color: var(--green); text-shadow: 0 0 10px var(--green); }
+  .nav-links a:hover::before { opacity: 1; }
+  .nav-status {
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .status-dot {
+    width: 8px; height: 8px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+    box-shadow: 0 0 8px var(--green);
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.1} }
+
+  /* ─── HERO ─── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 40px 60px;
+    text-align: center;
+    position: relative;
+  }
+
+  .boot-line {
+    font-size: 11px;
+    color: var(--green-dim);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeUp 0.5s 0.3s forwards;
+  }
+
+  .glitch-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .hero-name {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(28px, 5vw, 64px);
+    font-weight: 900;
+    color: var(--green);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px var(--green), 0 0 40px var(--green-dim);
+    position: relative;
+    animation: glitch-main 4s infinite;
+  }
+
+  .hero-name::before,
+  .hero-name::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+  .hero-name::before {
+    color: var(--cyan);
+    animation: glitch-top 4s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  }
+  .hero-name::after {
+    color: var(--red);
+    animation: glitch-bot 4s infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  }
+
+  @keyframes glitch-main {
+    0%,90%,100% { transform: none; }
+    92% { transform: skew(-1deg); }
+    94% { transform: skew(1deg) translateX(-3px); }
+    96% { transform: skew(0deg) translateX(3px); }
+    98% { transform: none; }
+  }
+  @keyframes glitch-top {
+    0%,90%,100% { transform: none; opacity:0; }
+    92% { transform: translateX(-4px); opacity: 0.8; }
+    94% { transform: translateX(4px); opacity: 0.8; }
+    96% { transform: none; opacity: 0; }
+  }
+  @keyframes glitch-bot {
+    0%,93%,100% { transform: none; opacity:0; }
+    94% { transform: translateX(5px); opacity: 0.7; }
+    96% { transform: translateX(-5px); opacity: 0.7; }
+    98% { transform: none; opacity: 0; }
+  }
+
+  .hero-title {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(12px, 2vw, 18px);
+    color: var(--cyan);
+    letter-spacing: 5px;
+    margin: 16px 0 30px;
+    text-shadow: 0 0 12px var(--cyan);
+    opacity: 0;
+    animation: fadeUp 0.5s 0.9s forwards;
+  }
+
+  /* TERMINAL TYPING HERO */
+  .terminal-hero {
+    background: rgba(0,20,0,0.7);
+    border: 1px solid var(--green-dim);
+    border-radius: 4px;
+    padding: 20px 28px;
+    width: min(600px, 90vw);
+    text-align: left;
+    margin: 20px auto 40px;
+    box-shadow: 0 0 30px rgba(0,255,65,0.1), inset 0 0 20px rgba(0,255,65,0.03);
+    opacity: 0;
+    animation: fadeUp 0.5s 1.2s forwards;
+  }
+  .t-bar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--green-dark);
+  }
+  .t-dot { width: 11px; height: 11px; border-radius: 50%; }
+  .t-dot.r { background: #ff5f56; box-shadow: 0 0 6px #ff5f56; }
+  .t-dot.y { background: #ffbd2e; box-shadow: 0 0 6px #ffbd2e; }
+  .t-dot.g { background: #27c93f; box-shadow: 0 0 6px #27c93f; }
+  .t-title { margin-left: 8px; font-size: 11px; color: var(--green-dim); letter-spacing: 2px; }
+  .t-line { font-size: 13px; line-height: 1.9; color: var(--white); }
+  .t-prompt { color: var(--green); }
+  .t-cmd { color: var(--cyan); }
+  .t-out { color: var(--green-dim); padding-left: 18px; }
+  .t-cursor {
+    display: inline-block;
+    width: 9px; height: 15px;
+    background: var(--green);
+    vertical-align: middle;
+    animation: blink 1s infinite;
+    box-shadow: 0 0 6px var(--green);
+    margin-left: 2px;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeUp 0.5s 1.6s forwards;
+  }
+  .hbadge {
+    border: 1px solid var(--green-dim);
+    color: var(--green);
+    font-size: 11px;
+    padding: 6px 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(0,255,65,0.04);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .hbadge::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0,255,65,0.15), transparent);
+    transition: left 0.4s;
+  }
+  .hbadge:hover { border-color: var(--green); box-shadow: 0 0 14px rgba(0,255,65,0.3); color: var(--green); text-shadow: 0 0 8px var(--green); }
+  .hbadge:hover::before { left: 100%; }
+
+  @keyframes fadeUp {
+    from { opacity:0; transform: translateY(20px); }
+    to   { opacity:1; transform: translateY(0); }
+  }
+
+  /* SCROLL INDICATOR */
+  .scroll-hint {
+    margin-top: 50px;
+    font-size: 11px;
+    color: var(--green-dim);
+    letter-spacing: 3px;
+    animation: pulseY 2s infinite;
+    opacity: 0;
+    animation: pulseY 2s 2.5s infinite;
+  }
+  @keyframes pulseY {
+    0%,100% { opacity:0.4; transform:translateY(0); }
+    50%      { opacity:1;   transform:translateY(6px); }
+  }
+
+  /* ─── SECTION COMMON ─── */
+  section {
+    padding: 90px 5vw;
+    position: relative;
+  }
+
+  .sec-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+  .sec-num {
+    font-family: 'VT323', monospace;
+    font-size: 48px;
+    color: var(--green-dark);
+    line-height: 1;
+  }
+  .sec-title {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(16px, 3vw, 26px);
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 4px;
+    text-shadow: 0 0 16px var(--green);
+  }
+  .sec-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--green-dim), transparent);
+  }
+
+  /* ─── ABOUT ─── */
+  #about { background: rgba(0,10,0,0.3); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .terminal-box {
+    background: rgba(0,15,0,0.6);
+    border: 1px solid var(--green-dim);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 24px rgba(0,255,65,0.07);
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  .terminal-box:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 30px rgba(0,255,65,0.18);
+  }
+  .tb-header {
+    background: rgba(0,255,65,0.06);
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--green-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--green-dim);
+    letter-spacing: 2px;
+  }
+  .tb-header span { color: var(--green); }
+  .tb-body { padding: 20px; }
+  .tb-row {
+    display: flex;
+    gap: 12px;
+    padding: 5px 0;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(0,255,65,0.06);
+  }
+  .tb-key { color: var(--cyan); min-width: 100px; }
+  .tb-val { color: var(--white); }
+  .tb-val.green { color: var(--green); }
+
+  .stat-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .stat-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--green-dim);
+    letter-spacing: 1px;
+  }
+  .stat-label span { color: var(--green); }
+  .stat-bar {
+    height: 6px;
+    background: rgba(0,255,65,0.1);
+    border: 1px solid var(--green-dark);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .stat-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green-dark), var(--green));
+    box-shadow: 0 0 8px var(--green);
+    border-radius: 2px;
+    width: 0;
+    transition: width 1.4s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  /* ─── TECH STACK ─── */
+  #stack { }
+
+  .stack-category {
+    margin-bottom: 40px;
+  }
+  .cat-label {
+    font-size: 11px;
+    color: var(--green-dim);
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cat-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--green-dark), transparent);
+  }
+
+  .badge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tech-badge {
+    font-size: 12px;
+    padding: 7px 16px;
+    border: 1px solid var(--green-dark);
+    color: var(--green-dim);
+    letter-spacing: 1.5px;
+    background: rgba(0,255,65,0.03);
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+  }
+  .tech-badge::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--green);
+    transition: width 0.3s;
+    box-shadow: 0 0 6px var(--green);
+  }
+  .tech-badge:hover {
+    border-color: var(--green);
+    color: var(--green);
+    background: rgba(0,255,65,0.07);
+    text-shadow: 0 0 8px var(--green);
+    transform: translateY(-2px);
+  }
+  .tech-badge:hover::after { width: 100%; }
+  .tech-badge.sap {
+    border-color: rgba(15,170,255,0.4);
+    color: rgba(15,170,255,0.7);
+  }
+  .tech-badge.sap:hover {
+    border-color: #0faaff;
+    color: #0faaff;
+    text-shadow: 0 0 8px #0faaff;
+    background: rgba(15,170,255,0.07);
+  }
+  .tech-badge.sap::after { background: #0faaff; box-shadow: 0 0 6px #0faaff; }
+  .tech-badge.ai {
+    border-color: rgba(255,111,0,0.4);
+    color: rgba(255,111,0,0.7);
+  }
+  .tech-badge.ai:hover {
+    border-color: #ff6f00;
+    color: #ff6f00;
+    text-shadow: 0 0 8px #ff6f00;
+    background: rgba(255,111,0,0.07);
+  }
+  .tech-badge.ai::after { background: #ff6f00; box-shadow: 0 0 6px #ff6f00; }
+
+  /* ─── PROJECTS ─── */
+  #projects { background: rgba(0,10,0,0.3); }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  .project-card {
+    background: rgba(0,15,0,0.5);
+    border: 1px solid var(--green-dark);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s;
+    cursor: default;
+  }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: -100%; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(0,255,65,0.06), transparent);
+    transition: top 0.4s;
+  }
+  .project-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 30px rgba(0,255,65,0.15), inset 0 0 20px rgba(0,255,65,0.04);
+    transform: translateY(-4px);
+  }
+  .project-card:hover::before { top: 0; }
+
+  .pc-top {
+    background: rgba(0,255,65,0.05);
+    border-bottom: 1px solid var(--green-dark);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-dots { display:flex; gap:6px; }
+  .pc-dot { width:9px; height:9px; border-radius:50%; }
+  .pc-dot:nth-child(1) { background: #ff5f56; }
+  .pc-dot:nth-child(2) { background: #ffbd2e; }
+  .pc-dot:nth-child(3) { background: #27c93f; box-shadow: 0 0 6px #27c93f; }
+  .pc-tag {
+    font-size: 10px;
+    color: var(--green);
+    letter-spacing: 2px;
+    border: 1px solid var(--green-dark);
+    padding: 2px 10px;
+  }
+
+  .pc-body { padding: 22px 20px 24px; }
+  .pc-icon { font-size: 28px; margin-bottom: 12px; }
+  .pc-name {
+    font-family: 'Orbitron', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px var(--green);
+    margin-bottom: 8px;
+  }
+  .pc-sub {
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    text-shadow: 0 0 8px var(--cyan);
+  }
+  .pc-desc {
+    font-size: 12px;
+    color: rgba(200,255,200,0.65);
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+  .pc-desc li { list-style: none; padding-left: 14px; position: relative; }
+  .pc-desc li::before { content: '▸'; position: absolute; left: 0; color: var(--green); }
+  .pc-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pctag {
+    font-size: 10px;
+    padding: 3px 10px;
+    border: 1px solid var(--green-dark);
+    color: var(--green-dim);
+    letter-spacing: 1px;
+  }
+
+  /* ─── EDUCATION ─── */
+  #education { }
+
+  .edu-timeline { position: relative; padding-left: 40px; }
+  .edu-timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, var(--green), var(--green-dark), transparent);
+  }
+
+  .edu-item {
+    position: relative;
+    margin-bottom: 36px;
+    padding: 20px 24px;
+    background: rgba(0,15,0,0.5);
+    border: 1px solid var(--green-dark);
+    transition: all 0.3s;
+  }
+  .edu-item::before {
+    content: '●';
+    position: absolute;
+    left: -36px;
+    top: 22px;
+    color: var(--green);
+    text-shadow: 0 0 10px var(--green);
+    font-size: 14px;
+  }
+  .edu-item:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 20px rgba(0,255,65,0.12);
+    transform: translateX(4px);
+  }
+  .edu-year { font-size: 11px; color: var(--green-dim); letter-spacing: 2px; margin-bottom: 8px; }
+  .edu-inst {
+    font-family: 'Orbitron', monospace;
+    font-size: 14px;
+    color: var(--green);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .edu-deg { font-size: 12px; color: var(--cyan); letter-spacing: 1px; margin-bottom: 10px; }
+  .edu-score {
+    display: inline-block;
+    font-family: 'Orbitron', monospace;
+    font-size: 18px;
+    color: var(--green);
+    text-shadow: 0 0 14px var(--green);
+    border: 1px solid var(--green-dim);
+    padding: 4px 16px;
+  }
+
+  /* ─── OBJECTIVES ─── */
+  #objectives { background: rgba(0,10,0,0.3); }
+
+  .obj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .obj-card {
+    border: 1px solid var(--green-dark);
+    padding: 22px 20px;
+    background: rgba(0,15,0,0.4);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .obj-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--green-dark);
+    transition: background 0.3s;
+  }
+  .obj-card:hover { border-color: var(--green); box-shadow: 0 0 20px rgba(0,255,65,0.1); }
+  .obj-card:hover::before { background: var(--green); box-shadow: 0 0 10px var(--green); }
+  .obj-icon { font-size: 24px; margin-bottom: 12px; }
+  .obj-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px var(--green);
+  }
+  .obj-text { font-size: 12px; color: rgba(200,255,200,0.6); line-height: 1.8; }
+
+  /* ─── CONTACT ─── */
+  #contact { text-align: center; }
+
+  .contact-terminal {
+    display: inline-block;
+    background: rgba(0,15,0,0.6);
+    border: 1px solid var(--green-dim);
+    padding: 40px 60px;
+    margin-top: 20px;
+    box-shadow: 0 0 40px rgba(0,255,65,0.08);
+    position: relative;
+  }
+  .contact-terminal::before,
+  .contact-terminal::after {
+    content: '';
+    position: absolute;
+    width: 14px; height: 14px;
+    border-color: var(--green);
+    border-style: solid;
+  }
+  .contact-terminal::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+  .contact-terminal::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+  .ct-prompt { font-size: 13px; color: var(--green-dim); letter-spacing: 2px; margin-bottom: 24px; }
+  .ct-cmd { color: var(--green); }
+
+  .contact-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+  .clink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border: 1px solid var(--green-dim);
+    color: var(--green);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .clink::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0,255,65,0.12), transparent);
+    transition: left 0.4s;
+  }
+  .clink:hover { border-color: var(--green); box-shadow: 0 0 20px rgba(0,255,65,0.2); text-shadow: 0 0 8px var(--green); }
+  .clink:hover::before { left: 100%; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid var(--green-dark);
+    font-size: 11px;
+    color: var(--green-dim);
+    letter-spacing: 2px;
+  }
+
+  /* ─── SCROLL ANIMATIONS ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s, transform 0.7s;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:768px) {
+    nav { padding: 12px 20px; }
+    .nav-links { display: none; }
+    section { padding: 70px 20px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .contact-terminal { padding: 28px 24px; }
+    .hero-name { font-size: clamp(22px,8vw,42px); }
+  }
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- MATRIX BACKGROUND -->
+<canvas id="matrix-canvas"></canvas>
+
+<!-- OVERLAYS -->
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<!-- ════════════════════════════════════════════ -->
+<div class="content">
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">root<span>@ameen</span>:~$</div>
+    <div class="nav-links">
+      <a href="#about">./about</a>
+      <a href="#stack">./stack</a>
+      <a href="#projects">./projects</a>
+      <a href="#education">./education</a>
+      <a href="#contact">./contact</a>
+    </div>
+    <div class="nav-status">
+      <div class="status-dot"></div>
+      OPEN TO WORK
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="boot-line">[ SYSTEM INITIALIZED — SAP FIORI DEVELOPER PROFILE v2025 ]</div>
+
+    <div class="glitch-wrapper">
+      <div class="hero-name" data-text="AMEEN UL HASSAN KHAN">AMEEN UL HASSAN KHAN</div>
+    </div>
+
+    <div class="hero-title">SAP UI5 · FIORI · FULL-STACK · AI ENGINEER</div>
+
+    <div class="terminal-hero">
+      <div class="t-bar">
+        <div class="t-dot r"></div>
+        <div class="t-dot y"></div>
+        <div class="t-dot g"></div>
+        <span class="t-title">terminal — bash — 80×24</span>
+      </div>
+      <div id="terminal-output"></div>
+    </div>
+
+    <div class="hero-badges">
+      <div class="hbadge">SAP UI5</div>
+      <div class="hbadge">FIORI ELEMENTS</div>
+      <div class="hbadge">ODATA V2/V4</div>
+      <div class="hbadge">MVC ARCHITECTURE</div>
+      <div class="hbadge">ABAP GATEWAY</div>
+      <div class="hbadge">DEEP LEARNING</div>
+    </div>
+
+    <div class="scroll-hint">▼ SCROLL TO EXPLORE ▼</div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="sec-header reveal">
+      <div class="sec-num">01</div>
+      <div class="sec-title">SYSTEM.IDENTIFICATION</div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="terminal-box reveal">
+        <div class="tb-header">
+          <span>●</span> cat /etc/developer.conf
+        </div>
+        <div class="tb-body">
+          <div class="tb-row"><span class="tb-key">NAME</span><span class="tb-val">"Ameen Ul Hassan Khan"</span></div>
+          <div class="tb-row"><span class="tb-key">LOCATION</span><span class="tb-val">"Andhra Pradesh, India"</span></div>
+          <div class="tb-row"><span class="tb-key">DEGREE</span><span class="tb-val">"B.Tech CSE — 8.08 CGPA"</span></div>
+          <div class="tb-row"><span class="tb-key">INSTITUTE</span><span class="tb-val">"Narasaraopeta Engg. College"</span></div>
+          <div class="tb-row"><span class="tb-key">PRIMARY</span><span class="tb-val green">"SAP UI5 & Fiori Developer"</span></div>
+          <div class="tb-row"><span class="tb-key">STACK</span><span class="tb-val">"MVC · OData · SAP Gateway"</span></div>
+          <div class="tb-row"><span class="tb-key">TOOLS</span><span class="tb-val">"BAS · NetWeaver · ABAP"</span></div>
+          <div class="tb-row"><span class="tb-key">AI_ENGINE</span><span class="tb-val">"CNN + LSTM · TensorFlow"</span></div>
+          <div class="tb-row"><span class="tb-key">STATUS</span><span class="tb-val green">"OPEN_TO_OPPORTUNITIES ✓"</span></div>
+        </div>
+      </div>
+
+      <div class="terminal-box reveal" id="skills-box">
+        <div class="tb-header">
+          <span>●</span> ./run --benchmark skills
+        </div>
+        <div class="tb-body">
+          <div class="stat-row">
+            <div class="stat-label">SAP UI5 / FIORI <span>95%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="95"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">ODATA V2 / V4 <span>90%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="90"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">JAVASCRIPT / TYPESCRIPT <span>90%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="90"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">ABAP / SAP GATEWAY <span>85%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="85"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">REACT.JS <span>80%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="80"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">PYTHON / DEEP LEARNING <span>75%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="75"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">ANGULAR <span>70%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="70"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-label">MONGODB / ORACLE DB <span>65%</span></div>
+            <div class="stat-bar"><div class="stat-fill" data-w="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TECH STACK ══ -->
+  <section id="stack">
+    <div class="sec-header reveal">
+      <div class="sec-num">02</div>
+      <div class="sec-title">TECH.STACK ── MODULES LOADED</div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="stack-category reveal">
+      <div class="cat-label">// SAP ECOSYSTEM — PRIMARY MODULES</div>
+      <div class="badge-grid">
+        <div class="tech-badge sap">SAP UI5</div>
+        <div class="tech-badge sap">SAP FIORI</div>
+        <div class="tech-badge sap">SAP BAS</div>
+        <div class="tech-badge sap">ODATA V2 / V4</div>
+        <div class="tech-badge sap">ABAP</div>
+        <div class="tech-badge sap">SAP NETWEAVER GATEWAY</div>
+        <div class="tech-badge sap">FIORI LAUNCHPAD</div>
+        <div class="tech-badge sap">FIORI ELEMENTS</div>
+        <div class="tech-badge sap">SAP BTP</div>
+      </div>
+    </div>
+
+    <div class="stack-category reveal">
+      <div class="cat-label">// FRONTEND — INTERFACE LAYER</div>
+      <div class="badge-grid">
+        <div class="tech-badge">JAVASCRIPT</div>
+        <div class="tech-badge">TYPESCRIPT</div>
+        <div class="tech-badge">HTML5</div>
+        <div class="tech-badge">CSS3</div>
+        <div class="tech-badge">REACT.JS</div>
+        <div class="tech-badge">ANGULAR</div>
+      </div>
+    </div>
+
+    <div class="stack-category reveal">
+      <div class="cat-label">// BACKEND & DATABASE — DATA LAYER</div>
+      <div class="badge-grid">
+        <div class="tech-badge">NODE.JS</div>
+        <div class="tech-badge">PYTHON</div>
+        <div class="tech-badge">FLASK</div>
+        <div class="tech-badge">MONGODB</div>
+        <div class="tech-badge">MYSQL</div>
+        <div class="tech-badge">ORACLE DB</div>
+        <div class="tech-badge">AWS</div>
+      </div>
+    </div>
+
+    <div class="stack-category reveal">
+      <div class="cat-label">// AI / ML — NEURAL ENGINES</div>
+      <div class="badge-grid">
+        <div class="tech-badge ai">TENSORFLOW</div>
+        <div class="tech-badge ai">KERAS</div>
+        <div class="tech-badge ai">CNN</div>
+        <div class="tech-badge ai">LSTM</div>
+        <div class="tech-badge ai">NUMPY</div>
+        <div class="tech-badge ai">PANDAS</div>
+        <div class="tech-badge ai">DEEP LEARNING</div>
+      </div>
+    </div>
+
+    <div class="stack-category reveal">
+      <div class="cat-label">// DEVOPS & TOOLS</div>
+      <div class="badge-grid">
+        <div class="tech-badge">GIT</div>
+        <div class="tech-badge">GITHUB</div>
+        <div class="tech-badge">BITBUCKET</div>
+        <div class="tech-badge">VS CODE</div>
+        <div class="tech-badge">FIGMA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="sec-header reveal">
+      <div class="sec-num">03</div>
+      <div class="sec-title">PROJECT.ARCHIVES ── DECRYPTING</div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="pc-top">
+          <div class="pc-dots"><div class="pc-dot"></div><div class="pc-dot"></div><div class="pc-dot"></div></div>
+          <div class="pc-tag">ACTIVE</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-icon">🚀</div>
+          <div class="pc-name">RASAD</div>
+          <div class="pc-sub">PLAYER ANALYTICS DASHBOARD</div>
+          <ul class="pc-desc">
+            <li>High-performance analytics via ABAP OData services</li>
+            <li>Full CRUD operations with complex view routing</li>
+            <li>Fiori Design Guidelines — responsive enterprise UX</li>
+            <li>Custom UI validations + advanced OData modeling</li>
+            <li>Mobile-first enterprise-grade interface</li>
+          </ul>
+          <div class="pc-tags">
+            <span class="pctag">SAP UI5</span>
+            <span class="pctag">FIORI</span>
+            <span class="pctag">ABAP ODATA</span>
+            <span class="pctag">MVC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="pc-top">
+          <div class="pc-dots"><div class="pc-dot"></div><div class="pc-dot"></div><div class="pc-dot"></div></div>
+          <div class="pc-tag">ACTIVE</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-icon">🤖</div>
+          <div class="pc-name">ENGINE HEALTH AI</div>
+          <div class="pc-sub">PREDICTIVE MAINTENANCE TOOL</div>
+          <ul class="pc-desc">
+            <li>Real-time fault detection via CNN & LSTM models</li>
+            <li>Predictive maintenance from live sensor streams</li>
+            <li>Reduces downtime via AI-driven anomaly detection</li>
+            <li>Multi-class engine fault classification</li>
+            <li>REST API deployed with Flask backend</li>
+          </ul>
+          <div class="pc-tags">
+            <span class="pctag">PYTHON</span>
+            <span class="pctag">CNN / LSTM</span>
+            <span class="pctag">TENSORFLOW</span>
+            <span class="pctag">FLASK</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="pc-top">
+          <div class="pc-dots"><div class="pc-dot"></div><div class="pc-dot"></div><div class="pc-dot"></div></div>
+          <div class="pc-tag">COMPLETE</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-icon">🎮</div>
+          <div class="pc-name">GAME SPEC PLATFORM</div>
+          <div class="pc-sub">GAME METRICS WEB PORTAL</div>
+          <ul class="pc-desc">
+            <li>High-performance portal for game spec data</li>
+            <li>Advanced State Management + data fetching layer</li>
+            <li>Dynamic filtering, search & comparison tools</li>
+            <li>Optimized component rendering architecture</li>
+          </ul>
+          <div class="pc-tags">
+            <span class="pctag">REACT.JS</span>
+            <span class="pctag">MONGODB</span>
+            <span class="pctag">NODE.JS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="pc-top">
+          <div class="pc-dots"><div class="pc-dot"></div><div class="pc-dot"></div><div class="pc-dot"></div></div>
+          <div class="pc-tag">COMPLETE</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-icon">🐄</div>
+          <div class="pc-name">DAIRY FARM MGMT</div>
+          <div class="pc-sub">FARM OPERATIONS SYSTEM</div>
+          <ul class="pc-desc">
+            <li>Component-based Angular + TypeScript architecture</li>
+            <li>Secure inventory tracking via Oracle DB integration</li>
+            <li>Fully digitized farm operations platform</li>
+            <li>Role-based multi-user access control</li>
+          </ul>
+          <div class="pc-tags">
+            <span class="pctag">ANGULAR</span>
+            <span class="pctag">ORACLE DB</span>
+            <span class="pctag">TYPESCRIPT</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section id="education">
+    <div class="sec-header reveal">
+      <div class="sec-num">04</div>
+      <div class="sec-title">EDU.LOG ── CREDENTIALS VERIFIED</div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="edu-timeline">
+      <div class="edu-item reveal">
+        <div class="edu-year">[ 2021 — 2025 ]</div>
+        <div class="edu-inst">NARASARAOPETA ENGINEERING COLLEGE</div>
+        <div class="edu-deg">B.Tech — Computer Science & Engineering</div>
+        <div class="edu-score">8.08 CGPA</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year">[ INTERMEDIATE ]</div>
+        <div class="edu-inst">SRI SAI JUNIOR COLLEGE</div>
+        <div class="edu-deg">Intermediate — MPC</div>
+        <div class="edu-score">6.60 CGPA</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year">[ SECONDARY ]</div>
+        <div class="edu-inst">BHASHYAM HIGH SCHOOL</div>
+        <div class="edu-deg">Secondary School Certificate (SSC)</div>
+        <div class="edu-score">9.0 GPA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OBJECTIVES ══ -->
+  <section id="objectives" style="background:rgba(0,10,0,0.3)">
+    <div class="sec-header reveal">
+      <div class="sec-num">05</div>
+      <div class="sec-title">MISSION.QUEUE ── ACTIVE TASKS</div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="obj-grid">
+      <div class="obj-card reveal">
+        <div class="obj-icon">🔭</div>
+        <div class="obj-title">IN_DEVELOPMENT</div>
+        <div class="obj-text">Refining RASAD with advanced OData modeling and custom UX validation framework flows.</div>
+      </div>
+      <div class="obj-card reveal">
+        <div class="obj-icon">🌱</div>
+        <div class="obj-title">SKILL_EXPANSION</div>
+        <div class="obj-text">Mastering SAP Fiori Launchpad — Tiles, Catalogs and Groups configuration management.</div>
+      </div>
+      <div class="obj-card reveal">
+        <div class="obj-icon">⚡</div>
+        <div class="obj-title">TECHNICAL_EDGE</div>
+        <div class="obj-text">SAPUI5 Debugging & Enterprise Performance Optimization and profiling techniques.</div>
+      </div>
+      <div class="obj-card reveal">
+        <div class="obj-icon">🤖</div>
+        <div class="obj-title">AI_RESEARCH</div>
+        <div class="obj-text">Exploring AI/ML integration within SAP BTP and Fiori extension scenarios.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="sec-header reveal" style="justify-content:center">
+      <div class="sec-num">06</div>
+      <div class="sec-title">HANDSHAKE.INIT ── CONNECT</div>
+    </div>
+
+    <div style="text-align:center">
+      <div class="contact-terminal reveal">
+        <div class="ct-prompt">root@ameen:~$ <span class="ct-cmd">./connect --protocol=open</span></div>
+        <div class="ct-prompt" style="color:var(--green);font-size:12px;margin-bottom:20px">
+          &gt; Connection available. Awaiting handshake... <span class="t-cursor"></span>
+        </div>
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284" class="clink" target="_blank">
+            💼 LINKEDIN
+          </a>
+          <a href="mailto:ameenkhan5256@gmail.com" class="clink">
+            📡 EMAIL
+          </a>
+          <a href="https://github.com/ameenkhan5256" class="clink" target="_blank">
+            ⌨ GITHUB
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>[ EOF ] — AMEEN UL HASSAN KHAN — SAP UI5 & FIORI DEVELOPER — 2025</div>
+    <div style="margin-top:8px;color:var(--green-dark)">root@ameen:~$ logout --save-session █</div>
+  </footer>
+
+</div><!-- /content -->
+
+<script>
+/* ═══════════════════════════════════════
+   MATRIX RAIN
+═══════════════════════════════════════ */
+(function(){
+  const canvas = document.getElementById('matrix-canvas');
+  const ctx = canvas.getContext('2d');
+  const chars = 'SAPUI5FIORIABAPODataMVCJSTS01アイウエオカキクケコサシスセソ'.split('');
+  let cols, drops;
+  function resize(){
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+    cols  = Math.floor(canvas.width / 18);
+    drops = Array(cols).fill(1);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  function draw(){
+    ctx.fillStyle = 'rgba(0,0,0,0.05)';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    for(let i=0;i<drops.length;i++){
+      const ch = chars[Math.floor(Math.random()*chars.length)];
+      const bright = Math.random() > 0.95;
+      ctx.fillStyle = bright ? '#ffffff' : '#00ff41';
+      ctx.font = bright ? 'bold 14px Share Tech Mono' : '14px Share Tech Mono';
+      ctx.fillText(ch, i*18, drops[i]*18);
+      if(drops[i]*18 > canvas.height && Math.random() > 0.975) drops[i]=0;
+      drops[i]++;
+    }
+  }
+  setInterval(draw, 50);
+})();
+
+/* ═══════════════════════════════════════
+   CUSTOM CURSOR
+═══════════════════════════════════════ */
+(function(){
+  const cursor = document.getElementById('cursor');
+  const dot    = document.getElementById('cursorDot');
+  let mx=0,my=0,cx=0,cy=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx-2.5+'px';dot.style.top=my-2.5+'px';});
+  (function animCursor(){
+    cx+=(mx-cx)*0.15; cy+=(my-cy)*0.15;
+    cursor.style.left=cx-9+'px'; cursor.style.top=cy-9+'px';
+    requestAnimationFrame(animCursor);
+  })();
+  document.addEventListener('mousedown',()=>{ cursor.style.transform='scale(0.7)'; });
+  document.addEventListener('mouseup',()=>{ cursor.style.transform='scale(1)'; });
+})();
+
+/* ═══════════════════════════════════════
+   TERMINAL HERO TYPING
+═══════════════════════════════════════ */
+(function(){
+  const out = document.getElementById('terminal-output');
+  const lines = [
+    { type:'prompt', text:'whoami' },
+    { type:'output', text:'ameen_ul_hassan_khan' },
+    { type:'prompt', text:'cat roles.txt' },
+    { type:'output', text:'[0] SAP UI5 & Fiori Developer' },
+    { type:'output', text:'[1] OData V2/V4 & Gateway Specialist' },
+    { type:'output', text:'[2] Full-Stack Cloud Engineer' },
+    { type:'output', text:'[3] CNN & LSTM AI Engineer' },
+    { type:'prompt', text:'echo $STATUS' },
+    { type:'output', text:'OPEN_TO_OPPORTUNITIES=true ✓' },
+    { type:'prompt', text:'_', cursor:true }
+  ];
+  let lineIdx=0, charIdx=0;
+  function nextLine(){
+    if(lineIdx>=lines.length) return;
+    const l = lines[lineIdx];
+    const div = document.createElement('div');
+    div.className = 't-line';
+    if(l.type==='prompt') div.innerHTML = `<span class="t-prompt">root@ameen:~$ </span><span class="t-cmd"></span>`;
+    else div.innerHTML = `<span class="t-out"></span>`;
+    out.appendChild(div);
+    const target = l.type==='prompt' ? div.querySelector('.t-cmd') : div.querySelector('.t-out');
+    if(l.cursor){ div.innerHTML='<span class="t-prompt">root@ameen:~$ </span><span class="t-cursor"></span>'; lineIdx++; return; }
+    charIdx=0;
+    const speed = l.type==='prompt' ? 55 : 18;
+    (function type(){
+      if(charIdx<l.text.length){ target.textContent+=l.text[charIdx++]; setTimeout(type,speed); }
+      else{ lineIdx++; setTimeout(nextLine, l.type==='prompt'?250:80); }
+    })();
+  }
+  setTimeout(nextLine, 1600);
+})();
+
+/* ═══════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════ */
+(function(){
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach((e,i)=>{ if(e.isIntersecting){ e.target.style.transitionDelay=(i*0.08)+'s'; e.target.classList.add('visible'); } });
+  },{threshold:0.12});
+  els.forEach(el=>obs.observe(el));
+})();
+
+/* ═══════════════════════════════════════
+   ANIMATED SKILL BARS
+═══════════════════════════════════════ */
+(function(){
+  const box = document.getElementById('skills-box');
+  const obs = new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){
+      document.querySelectorAll('.stat-fill').forEach(bar=>{
+        setTimeout(()=>{ bar.style.width = bar.dataset.w + '%'; },200);
+      });
+      obs.disconnect();
+    }
+  },{threshold:0.3});
+  if(box) obs.observe(box);
+})();
+</script>
+</body>
+</html>

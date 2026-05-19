@@ -1,1034 +1,430 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>AMEEN UL HASSAN KHAN — SAP Fiori Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --white: #ffffff;
-    --off-white: #e8e8e8;
-    --light-gray: #b0b0b0;
-    --mid-gray: #6a6a6a;
-    --dark-gray: #2a2a2a;
-    --near-black: #111111;
-    --black: #000000;
-    --accent: #ffffff;
-    --accent-dim: rgba(255,255,255,0.15);
-    --glow: rgba(255,255,255,0.06);
-  }
-
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--black);
-    color: var(--off-white);
-    font-family: 'Rajdhani', sans-serif;
-    overflow-x: hidden;
-    cursor: none;
-  }
-
-  /* ─── GRAIN OVERLAY ─── */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    pointer-events: none;
-    opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-    background-size: 200px 200px;
-    animation: grain 0.5s steps(1) infinite;
-  }
-  @keyframes grain {
-    0%,100%{background-position:0 0}
-    10%{background-position:-5% -10%}
-    20%{background-position:-15% 5%}
-    30%{background-position:7% -25%}
-    40%{background-position:-5% 25%}
-    50%{background-position:-15% 10%}
-    60%{background-position:15% 0%}
-    70%{background-position:0 15%}
-    80%{background-position:3% 35%}
-    90%{background-position:-10% 10%}
-  }
-
-  /* ─── VIGNETTE ─── */
-  .vignette {
-    position: fixed; inset: 0; z-index: 2; pointer-events: none;
-    background: radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.75) 100%);
-  }
-
-  /* ─── SCANLINES ─── */
-  .scanlines {
-    position: fixed; inset: 0; z-index: 3; pointer-events: none;
-    background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.04) 3px, rgba(0,0,0,0.04) 4px);
-  }
-
-  /* ─── CUSTOM CURSOR ─── */
-  #cursor {
-    position: fixed; width: 28px; height: 28px;
-    border: 1px solid rgba(255,255,255,0.7);
-    border-radius: 50%; pointer-events: none;
-    z-index: 99999; transition: transform 0.12s, border-color 0.2s;
-    mix-blend-mode: difference;
-  }
-  #cursor-dot {
-    position: fixed; width: 4px; height: 4px;
-    background: var(--white); border-radius: 50%;
-    pointer-events: none; z-index: 99999;
-    mix-blend-mode: difference;
-  }
-
-  /* ─── CONTENT ─── */
-  .content { position: relative; z-index: 10; }
-
-  /* ─── NAV ─── */
-  nav {
-    position: fixed; top: 0; width: 100%;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 20px 60px;
-    background: rgba(0,0,0,0.6);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    z-index: 1000; backdrop-filter: blur(10px);
-  }
-  .nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px; letter-spacing: 4px;
-    color: var(--white);
-  }
-  .nav-logo span { color: var(--light-gray); font-size: 13px; letter-spacing: 3px; font-family: 'Rajdhani', sans-serif; margin-left: 8px; }
-  .nav-links { display: flex; gap: 36px; }
-  .nav-links a {
-    color: var(--mid-gray); text-decoration: none;
-    font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
-    font-weight: 600; transition: color 0.3s;
-  }
-  .nav-links a:hover { color: var(--white); }
-  .nav-status {
-    font-size: 11px; letter-spacing: 2px; color: var(--light-gray);
-    display: flex; align-items: center; gap: 8px; text-transform: uppercase;
-    font-weight: 500;
-  }
-  .status-dot {
-    width: 6px; height: 6px; background: var(--white); border-radius: 50%;
-    animation: pulse-dot 2s infinite;
-    box-shadow: 0 0 8px rgba(255,255,255,0.6);
-  }
-  @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.3;transform:scale(0.7)} }
-
-  /* ─── HERO ─── */
-  #hero {
-    min-height: 100vh;
-    display: flex; flex-direction: column;
-    justify-content: center; align-items: flex-start;
-    padding: 120px 60px 80px;
-    position: relative; overflow: hidden;
-  }
-
-  /* BG diagonal lines */
-  #hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background:
-      linear-gradient(135deg, transparent 0%, transparent 49%, rgba(255,255,255,0.015) 49%, rgba(255,255,255,0.015) 50%, transparent 50%) 0 0 / 80px 80px,
-      linear-gradient(225deg, transparent 0%, transparent 49%, rgba(255,255,255,0.01) 49%, rgba(255,255,255,0.01) 50%, transparent 50%) 0 0 / 80px 80px;
-    pointer-events: none;
-  }
-
-  /* Right edge light shaft */
-  #hero::after {
-    content: '';
-    position: absolute; right: 0; top: 0; bottom: 0;
-    width: 40%;
-    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.02) 40%, rgba(255,255,255,0.05) 70%, rgba(255,255,255,0.02) 100%);
-    pointer-events: none;
-  }
-
-  .hero-tag {
-    font-family: 'Courier Prime', monospace;
-    font-size: 11px; letter-spacing: 4px; color: var(--mid-gray);
-    text-transform: uppercase; margin-bottom: 24px;
-    opacity: 0; animation: fadeInUp 0.6s 0.4s forwards;
-  }
-
-  .hero-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(56px, 9vw, 130px);
-    line-height: 0.9; letter-spacing: 4px;
-    color: var(--white);
-    text-shadow: 0 0 80px rgba(255,255,255,0.08);
-    position: relative;
-    opacity: 0; animation: fadeInUp 0.7s 0.6s forwards;
-  }
-  .hero-name .line2 {
-    display: block;
-    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
-    color: transparent;
-  }
-
-  .hero-title {
-    font-size: 14px; letter-spacing: 6px; color: var(--light-gray);
-    text-transform: uppercase; font-weight: 500;
-    margin: 28px 0 40px;
-    opacity: 0; animation: fadeInUp 0.6s 1s forwards;
-    display: flex; align-items: center; gap: 14px;
-  }
-  .hero-title::before { content: '—'; color: var(--mid-gray); }
-
-  .hero-chips {
-    display: flex; flex-wrap: wrap; gap: 10px;
-    opacity: 0; animation: fadeInUp 0.6s 1.3s forwards;
-    margin-bottom: 48px;
-  }
-  .chip {
-    font-size: 10px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
-    padding: 7px 18px;
-    border: 1px solid rgba(255,255,255,0.15);
-    color: var(--light-gray);
-    background: rgba(255,255,255,0.03);
-    transition: all 0.3s;
-  }
-  .chip:hover { border-color: rgba(255,255,255,0.5); color: var(--white); background: rgba(255,255,255,0.06); }
-
-  .hero-cta {
-    display: flex; gap: 16px;
-    opacity: 0; animation: fadeInUp 0.6s 1.6s forwards;
-  }
-  .btn-primary {
-    font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700;
-    padding: 14px 36px;
-    background: var(--white); color: var(--black);
-    text-decoration: none; transition: all 0.3s;
-    border: 1px solid var(--white);
-  }
-  .btn-primary:hover { background: transparent; color: var(--white); }
-  .btn-secondary {
-    font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700;
-    padding: 14px 36px;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: var(--light-gray); text-decoration: none; transition: all 0.3s;
-  }
-  .btn-secondary:hover { border-color: var(--white); color: var(--white); }
-
-  /* hero right side image atmosphere */
-  .hero-img-area {
-    position: absolute; right: 0; top: 0; bottom: 0; width: 42%;
-    pointer-events: none;
-    overflow: hidden;
-  }
-  .hero-img-area::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(90deg, var(--black) 0%, transparent 30%);
-    z-index: 2;
-  }
-  .hero-bg-img {
-    width: 100%; height: 100%; object-fit: cover;
-    filter: grayscale(100%) contrast(1.1) brightness(0.35);
-    opacity: 0.7;
-  }
-
-  .scroll-ind {
-    position: absolute; bottom: 40px; left: 60px;
-    display: flex; align-items: center; gap: 14px;
-    opacity: 0; animation: fadeInUp 0.6s 2s forwards;
-  }
-  .scroll-line {
-    width: 40px; height: 1px;
-    background: linear-gradient(90deg, transparent, var(--mid-gray));
-    animation: scroll-pulse 2s infinite;
-  }
-  @keyframes scroll-pulse { 0%,100%{width:40px;opacity:0.5} 50%{width:70px;opacity:1} }
-  .scroll-text { font-size: 10px; letter-spacing: 3px; color: var(--mid-gray); text-transform: uppercase; }
-
-  @keyframes fadeInUp {
-    from { opacity:0; transform:translateY(24px); }
-    to   { opacity:1; transform:translateY(0); }
-  }
-
-  /* ─── SECTIONS ─── */
-  section { padding: 100px 60px; position: relative; }
-  section:nth-child(even) { background: rgba(255,255,255,0.015); }
-
-  .sec-header {
-    display: flex; align-items: flex-end; gap: 20px;
-    margin-bottom: 60px;
-  }
-  .sec-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px; line-height: 1; color: rgba(255,255,255,0.05);
-    letter-spacing: 2px; user-select: none;
-  }
-  .sec-title-wrap {}
-  .sec-eyebrow {
-    font-size: 10px; letter-spacing: 4px; color: var(--mid-gray);
-    text-transform: uppercase; font-weight: 600; margin-bottom: 4px;
-  }
-  .sec-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(28px, 4vw, 52px);
-    letter-spacing: 3px; color: var(--white); line-height: 1;
-  }
-  .sec-rule {
-    flex: 1; height: 1px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.15), transparent);
-    margin-bottom: 12px;
-  }
-
-  /* REVEAL */
-  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s, transform 0.8s; }
-  .reveal.on { opacity: 1; transform: none; }
-
-  /* ─── ABOUT ─── */
-  .about-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
-  }
-  .info-panel {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
-    padding: 36px;
-    position: relative; overflow: hidden;
-    transition: background 0.3s, border-color 0.3s;
-  }
-  .info-panel:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
-  .info-panel::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0; height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    opacity: 0; transition: opacity 0.3s;
-  }
-  .info-panel:hover::before { opacity: 1; }
-
-  .panel-label {
-    font-family: 'Courier Prime', monospace;
-    font-size: 10px; letter-spacing: 3px; color: var(--mid-gray);
-    text-transform: uppercase; margin-bottom: 24px;
-    display: flex; align-items: center; gap: 10px;
-  }
-  .panel-label::after { content: ''; flex:1; height:1px; background: rgba(255,255,255,0.07); }
-
-  .info-row {
-    display: flex; justify-content: space-between; align-items: baseline;
-    padding: 9px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    font-size: 14px;
-  }
-  .info-row:last-child { border-bottom: none; }
-  .info-key { color: var(--mid-gray); font-weight: 500; font-size: 12px; letter-spacing: 1px; }
-  .info-val { color: var(--off-white); font-weight: 600; text-align: right; max-width: 60%; }
-  .info-val.accent { color: var(--white); }
-
-  /* SKILL BARS */
-  .skill-item { margin-bottom: 18px; }
-  .skill-header { display: flex; justify-content: space-between; margin-bottom: 7px; }
-  .skill-name { font-size: 12px; letter-spacing: 2px; color: var(--light-gray); font-weight: 600; text-transform: uppercase; }
-  .skill-pct { font-family: 'Courier Prime', monospace; font-size: 12px; color: var(--mid-gray); }
-  .skill-track {
-    height: 2px; background: rgba(255,255,255,0.07);
-    position: relative; overflow: visible;
-  }
-  .skill-fill {
-    height: 100%; width: 0;
-    background: var(--white);
-    transition: width 1.6s cubic-bezier(0.4,0,0.2,1);
-    position: relative;
-  }
-  .skill-fill::after {
-    content: '';
-    position: absolute; right: -1px; top: -3px;
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--white);
-    box-shadow: 0 0 12px rgba(255,255,255,0.5);
-  }
-
-  /* ─── STACK ─── */
-  .stack-section { margin-bottom: 48px; }
-  .stack-cat {
-    font-family: 'Courier Prime', monospace;
-    font-size: 10px; letter-spacing: 4px; color: var(--mid-gray);
-    text-transform: uppercase; margin-bottom: 18px;
-    display: flex; align-items: center; gap: 14px;
-  }
-  .stack-cat::after { content:''; flex:1; height:1px; background: rgba(255,255,255,0.06); }
-  .stack-badges { display: flex; flex-wrap: wrap; gap: 8px; }
-  .sbadge {
-    font-size: 11px; letter-spacing: 2px; font-weight: 600;
-    padding: 8px 18px;
-    border: 1px solid rgba(255,255,255,0.1);
-    color: var(--mid-gray);
-    background: rgba(255,255,255,0.02);
-    transition: all 0.25s; cursor: default;
-  }
-  .sbadge:hover { border-color: rgba(255,255,255,0.4); color: var(--white); background: rgba(255,255,255,0.05); }
-  .sbadge.primary { border-color: rgba(255,255,255,0.18); color: var(--light-gray); }
-  .sbadge.primary:hover { border-color: var(--white); color: var(--white); }
-
-  /* ─── EXPERIENCE ─── */
-  .exp-card {
-    border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(255,255,255,0.02);
-    padding: 40px; margin-bottom: 2px;
-    position: relative; overflow: hidden;
-    transition: all 0.35s;
-  }
-  .exp-card::before {
-    content: '';
-    position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
-    background: rgba(255,255,255,0.1);
-    transition: background 0.3s, box-shadow 0.3s;
-  }
-  .exp-card:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.2); }
-  .exp-card:hover::before { background: var(--white); box-shadow: 0 0 16px rgba(255,255,255,0.3); }
-
-  .exp-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-  .exp-company {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px; letter-spacing: 3px; color: var(--white);
-  }
-  .exp-period {
-    font-family: 'Courier Prime', monospace;
-    font-size: 11px; color: var(--mid-gray); letter-spacing: 2px;
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 5px 14px;
-  }
-  .exp-role { font-size: 12px; letter-spacing: 3px; color: var(--light-gray); font-weight: 600; text-transform: uppercase; margin-bottom: 24px; }
-  .exp-loc { font-size: 11px; color: var(--mid-gray); letter-spacing: 2px; margin-bottom: 24px; }
-  .exp-points { list-style: none; }
-  .exp-points li {
-    font-size: 14px; color: rgba(220,220,220,0.7); line-height: 1.7;
-    padding: 6px 0 6px 20px; position: relative;
-    border-bottom: 1px solid rgba(255,255,255,0.03);
-  }
-  .exp-points li:last-child { border-bottom: none; }
-  .exp-points li::before { content: '—'; position: absolute; left: 0; color: var(--mid-gray); }
-
-  /* ─── PROJECTS ─── */
-  .projects-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 2px;
-  }
-  .proj-card {
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.07);
-    padding: 36px; position: relative; overflow: hidden;
-    transition: all 0.35s;
-  }
-  .proj-card::after {
-    content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 60%);
-    opacity: 0; transition: opacity 0.35s;
-  }
-  .proj-card:hover { border-color: rgba(255,255,255,0.25); transform: translateY(-4px); }
-  .proj-card:hover::after { opacity: 1; }
-
-  .proj-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px; color: rgba(255,255,255,0.04);
-    line-height: 1; margin-bottom: -8px; letter-spacing: 2px;
-  }
-  .proj-status {
-    font-size: 9px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700;
-    padding: 3px 10px; border: 1px solid rgba(255,255,255,0.15);
-    color: var(--light-gray); display: inline-block; margin-bottom: 16px;
-  }
-  .proj-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 32px; letter-spacing: 3px; color: var(--white);
-    margin-bottom: 6px; line-height: 1.1;
-  }
-  .proj-sub { font-size: 11px; letter-spacing: 3px; color: var(--mid-gray); text-transform: uppercase; margin-bottom: 18px; font-weight: 600; }
-  .proj-desc { font-size: 13px; color: rgba(180,180,180,0.7); line-height: 1.8; margin-bottom: 22px; }
-  .proj-desc li { list-style: none; padding: 3px 0 3px 16px; position: relative; }
-  .proj-desc li::before { content: '·'; position: absolute; left: 0; color: var(--light-gray); font-size: 18px; line-height: 1.2; }
-  .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-  .ptag {
-    font-size: 9px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;
-    padding: 4px 12px; border: 1px solid rgba(255,255,255,0.1); color: var(--mid-gray);
-  }
-
-  /* ─── EDUCATION ─── */
-  .edu-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
-  .edu-card {
-    border: 1px solid rgba(255,255,255,0.07);
-    padding: 36px; background: rgba(255,255,255,0.02);
-    transition: all 0.3s; position: relative;
-  }
-  .edu-card::before {
-    content: ''; position: absolute; top:0; left:0; right:0; height: 2px;
-    background: rgba(255,255,255,0.08); transition: background 0.3s;
-  }
-  .edu-card:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.04); }
-  .edu-card:hover::before { background: var(--white); box-shadow: 0 0 14px rgba(255,255,255,0.2); }
-  .edu-period { font-family: 'Courier Prime', monospace; font-size: 10px; letter-spacing: 3px; color: var(--mid-gray); margin-bottom: 16px; }
-  .edu-inst { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: var(--white); line-height: 1.2; margin-bottom: 8px; }
-  .edu-deg { font-size: 12px; color: var(--light-gray); letter-spacing: 1px; margin-bottom: 20px; }
-  .edu-score {
-    font-family: 'Bebas Neue', sans-serif; font-size: 44px; letter-spacing: 2px;
-    color: var(--white); line-height: 1;
-    text-shadow: 0 0 40px rgba(255,255,255,0.1);
-  }
-  .edu-score span { font-size: 14px; color: var(--mid-gray); font-family: 'Rajdhani', sans-serif; letter-spacing: 2px; }
-
-  /* ─── OBJECTIVES ─── */
-  .obj-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
-  .obj-card {
-    border: 1px solid rgba(255,255,255,0.07);
-    padding: 32px; background: rgba(255,255,255,0.02);
-    transition: all 0.3s; position: relative;
-  }
-  .obj-card:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.04); }
-  .obj-icon { font-size: 28px; margin-bottom: 16px; filter: grayscale(1); }
-  .obj-title { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 2px; color: var(--white); margin-bottom: 12px; }
-  .obj-text { font-size: 13px; color: rgba(170,170,170,0.7); line-height: 1.7; }
-
-  /* ─── CONTACT ─── */
-  #contact { text-align: center; min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; }
-  #contact::before {
-    content: 'CONNECT';
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(80px,20vw,260px);
-    color: rgba(255,255,255,0.02);
-    letter-spacing: 10px; pointer-events: none; white-space: nowrap;
-  }
-  .contact-head {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(36px,6vw,80px);
-    letter-spacing: 4px; color: var(--white); margin-bottom: 12px;
-  }
-  .contact-sub { font-size: 13px; letter-spacing: 3px; color: var(--mid-gray); text-transform: uppercase; margin-bottom: 50px; }
-  .contact-links { display: flex; gap: 2px; flex-wrap: wrap; justify-content: center; }
-  .clink {
-    display: flex; align-items: center; gap: 12px;
-    padding: 18px 40px;
-    border: 1px solid rgba(255,255,255,0.1);
-    color: var(--light-gray); text-decoration: none;
-    font-size: 12px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600;
-    background: rgba(255,255,255,0.02);
-    transition: all 0.3s; position: relative; overflow: hidden;
-  }
-  .clink::before {
-    content:''; position:absolute; inset:0;
-    background: var(--white); transform: translateX(-101%);
-    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
-    z-index: 0;
-  }
-  .clink span { position: relative; z-index: 1; transition: color 0.35s; }
-  .clink:hover { border-color: var(--white); }
-  .clink:hover::before { transform: translateX(0); }
-  .clink:hover span { color: var(--black); }
-
-  /* ─── FOOTER ─── */
-  footer {
-    text-align: center; padding: 28px 60px;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  footer .f-left { font-family: 'Bebas Neue', sans-serif; font-size: 14px; letter-spacing: 3px; color: var(--mid-gray); }
-  footer .f-right { font-family: 'Courier Prime', monospace; font-size: 11px; color: rgba(255,255,255,0.15); letter-spacing: 2px; }
-
-  /* ─── RESPONSIVE ─── */
-  @media(max-width: 900px) {
-    nav { padding: 16px 24px; }
-    .nav-links { display: none; }
-    section { padding: 70px 24px; }
-    #hero { padding: 100px 24px 60px; }
-    .about-grid { grid-template-columns: 1fr; }
-    .edu-grid { grid-template-columns: 1fr; }
-    .obj-grid { grid-template-columns: 1fr 1fr; }
-    .hero-img-area { display: none; }
-    footer { flex-direction: column; gap: 10px; padding: 24px; }
-  }
-</style>
-</head>
-<body>
-
-<div id="cursor"></div>
-<div id="cursor-dot"></div>
-<div class="vignette"></div>
-<div class="scanlines"></div>
-
-<div class="content">
-
-  <!-- NAV -->
-  <nav>
-    <div class="nav-logo">AMEEN<span>/ SAP FIORI</span></div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-status"><div class="status-dot"></div>Available</div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-img-area">
-      <img src="ChatGPT_Image_May_13__2026__05_47_57_PM__1_.png" alt="" class="hero-bg-img"/>
-    </div>
-
-    <div class="hero-tag">// SAP UI5 · Fiori Developer · S/4HANA Public Cloud</div>
-
-    <div class="hero-name">
-      AMEEN UL
-      <span class="line2">HASSAN KHAN</span>
-    </div>
-
-    <div class="hero-title">SAP Fiori · OData · CDS Views · Adobe Forms · SAP BTP</div>
-
-    <div class="hero-chips">
-      <div class="chip">SAPUI5</div>
-      <div class="chip">Fiori Elements</div>
-      <div class="chip">OData V2/V4</div>
-      <div class="chip">MVC Architecture</div>
-      <div class="chip">ABAP Gateway</div>
-      <div class="chip">S/4HANA Cloud</div>
-      <div class="chip">Adobe Forms</div>
-      <div class="chip">Deep Learning</div>
-    </div>
-
-    <div class="hero-cta">
-      <a href="mailto:ameenkhan5256@gmail.com" class="btn-primary">Get In Touch</a>
-      <a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284" class="btn-secondary" target="_blank">LinkedIn Profile</a>
-    </div>
-
-    <div class="scroll-ind">
-      <div class="scroll-line"></div>
-      <div class="scroll-text">Scroll to explore</div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="sec-header reveal">
-      <div class="sec-num">01</div>
-      <div class="sec-title-wrap">
-        <div class="sec-eyebrow">System Identification</div>
-        <div class="sec-title">ABOUT ME</div>
-      </div>
-      <div class="sec-rule"></div>
-    </div>
-
-    <div class="about-grid">
-      <div class="info-panel reveal">
-        <div class="panel-label">developer.conf</div>
-        <div class="info-row"><span class="info-key">Name</span><span class="info-val accent">Ameen Ul Hassan Khan</span></div>
-        <div class="info-row"><span class="info-key">Location</span><span class="info-val">Riyadh, Saudi Arabia</span></div>
-        <div class="info-row"><span class="info-key">Role</span><span class="info-val accent">SAP UI5 & Fiori Developer</span></div>
-        <div class="info-row"><span class="info-key">Employer</span><span class="info-val">Global Drive Technologies</span></div>
-        <div class="info-row"><span class="info-key">Degree</span><span class="info-val">B.Tech CSE — 8.08 CGPA</span></div>
-        <div class="info-row"><span class="info-key">Institute</span><span class="info-val">Narasaraopeta Engg. College</span></div>
-        <div class="info-row"><span class="info-key">Stack</span><span class="info-val">MVC · OData · SAP Gateway</span></div>
-        <div class="info-row"><span class="info-key">Tools</span><span class="info-val">BAS · NetWeaver · ABAP</span></div>
-        <div class="info-row"><span class="info-key">AI Stack</span><span class="info-val">CNN + LSTM · TensorFlow</span></div>
-        <div class="info-row"><span class="info-key">Status</span><span class="info-val accent">Open to Opportunities ✓</span></div>
-      </div>
-
-      <div class="info-panel reveal" id="skills-panel">
-        <div class="panel-label">benchmark --skills</div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">SAP UI5 / Fiori</span><span class="skill-pct">95%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="95"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">OData V2 / V4</span><span class="skill-pct">90%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">JavaScript / TypeScript</span><span class="skill-pct">88%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">Adobe Forms / CDS Views</span><span class="skill-pct">85%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">ABAP / SAP Gateway</span><span class="skill-pct">82%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="82"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">React.js / Angular</span><span class="skill-pct">78%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="78"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">Python / Deep Learning</span><span class="skill-pct">74%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="74"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span class="skill-name">MongoDB / Oracle DB</span><span class="skill-pct">65%</span></div>
-          <div class="skill-track"><div class="skill-fill" data-w="65"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH STACK -->
-  <section id="stack">
-    <div class="sec-header reveal">
-      <div class="sec-num">02</div>
-      <div class="sec-title-wrap">
-        <div class="sec-eyebrow">Modules Loaded</div>
-        <div class="sec-title">TECH STACK</div>
-      </div>
-      <div class="sec-rule"></div>
-    </div>
-
-    <div class="stack-section reveal">
-      <div class="stack-cat">SAP Ecosystem — Primary</div>
-      <div class="stack-badges">
-        <div class="sbadge primary">SAP UI5</div>
-        <div class="sbadge primary">SAP Fiori</div>
-        <div class="sbadge primary">SAP BAS</div>
-        <div class="sbadge primary">OData V2 / V4</div>
-        <div class="sbadge primary">ABAP</div>
-        <div class="sbadge primary">SAP NetWeaver Gateway</div>
-        <div class="sbadge primary">Fiori Launchpad</div>
-        <div class="sbadge primary">Fiori Elements</div>
-        <div class="sbadge primary">SAP BTP</div>
-        <div class="sbadge primary">CDS Views</div>
-        <div class="sbadge primary">Adobe Forms</div>
-        <div class="sbadge primary">S/4HANA Public Cloud</div>
-        <div class="sbadge primary">Adapt UI</div>
-      </div>
-    </div>
-
-    <div class="stack-section reveal">
-      <div class="stack-cat">Frontend — Interface Layer</div>
-      <div class="stack-badges">
-        <div class="sbadge">JavaScript</div>
-        <div class="sbadge">TypeScript</div>
-        <div class="sbadge">HTML5</div>
-        <div class="sbadge">CSS3</div>
-        <div class="sbadge">React.js</div>
-        <div class="sbadge">Angular</div>
-        <div class="sbadge">XML Views</div>
-        <div class="sbadge">JSON Models</div>
-      </div>
-    </div>
-
-    <div class="stack-section reveal">
-      <div class="stack-cat">Backend & Database</div>
-      <div class="stack-badges">
-        <div class="sbadge">Node.js</div>
-        <div class="sbadge">Python</div>
-        <div class="sbadge">Flask</div>
-        <div class="sbadge">MongoDB</div>
-        <div class="sbadge">MySQL</div>
-        <div class="sbadge">Oracle DB</div>
-        <div class="sbadge">AWS</div>
-      </div>
-    </div>
-
-    <div class="stack-section reveal">
-      <div class="stack-cat">AI / ML — Neural Engines</div>
-      <div class="stack-badges">
-        <div class="sbadge">TensorFlow</div>
-        <div class="sbadge">Keras</div>
-        <div class="sbadge">CNN</div>
-        <div class="sbadge">LSTM</div>
-        <div class="sbadge">XGBoost</div>
-        <div class="sbadge">NumPy</div>
-        <div class="sbadge">Pandas</div>
-      </div>
-    </div>
-
-    <div class="stack-section reveal">
-      <div class="stack-cat">DevOps & Tools</div>
-      <div class="stack-badges">
-        <div class="sbadge">Git</div>
-        <div class="sbadge">GitHub</div>
-        <div class="sbadge">Bitbucket</div>
-        <div class="sbadge">VS Code</div>
-        <div class="sbadge">SAP GUI</div>
-        <div class="sbadge">Figma</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="sec-header reveal">
-      <div class="sec-num">03</div>
-      <div class="sec-title-wrap">
-        <div class="sec-eyebrow">Career History</div>
-        <div class="sec-title">EXPERIENCE</div>
-      </div>
-      <div class="sec-rule"></div>
-    </div>
-
-    <div class="exp-card reveal">
-      <div class="exp-meta">
-        <div>
-          <div class="exp-company">Global Drive Technologies</div>
-          <div class="exp-role">SAP UI5 Fiori Developer</div>
-          <div class="exp-loc">Riyadh, Saudi Arabia</div>
-        </div>
-        <div class="exp-period">Feb 2026 — Present</div>
-      </div>
-      <ul class="exp-points">
-        <li>Developed SAP UI5/Fiori applications in SAP S/4HANA Public Cloud, streamlining business workflows and improving usability through responsive, role-based UI design.</li>
-        <li>Delivered end-to-end UI5 applications using SAP Business Application Studio, applying MVC architecture, routing, and advanced data binding.</li>
-        <li>Integrated UI5 applications with OData services (full CRUD operations), enabling real-time data processing and reducing dependency on manual data handling.</li>
-        <li>Designed and implemented CDS Views, improving backend data performance and enabling efficient data consumption in Fiori applications.</li>
-        <li>Developed and configured 30+ Adobe Forms in SAP S/4HANA Customizing Tenant, accelerating document generation with standardized output.</li>
-        <li>Adapted and extended standard Fiori applications using Adapt UI, customizing fields, layouts, and business logic without impacting core applications.</li>
-        <li>Managed SAP Transport Requests (TRs), ensuring smooth and controlled movement of changes across system landscapes.</li>
-        <li>Administered user access — creation, role assignments, and authorizations — ensuring compliance with role-based access control.</li>
-        <li>Configured and optimized Fiori Launchpad (Tiles, Catalogs, Groups) for structured navigation and improved end-user accessibility.</li>
-        <li>Built self-initiated SAP UI5 analytics dashboard (RASAD project) with complex data binding, validations, and responsive UX.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="sec-header reveal">
-      <div class="sec-num">04</div>
-      <div class="sec-title-wrap">
-        <div class="sec-eyebrow">Decrypting Archives</div>
-        <div class="sec-title">PROJECTS</div>
-      </div>
-      <div class="sec-rule"></div>
-    </div>
-
-    <div class="projects-grid">
-
-      <div class="proj-card reveal">
-        <div class="proj-num">01</div>
-        <div class="proj-status">Active</div>
-        <div class="proj-name">RASAD</div>
-        <div class="proj-sub">Player Analytics Dashboard</div>
-        <ul class="proj-desc">
-          <li>High-performance analytics via ABAP OData services</li>
-          <li>Full CRUD with complex view routing</li>
-          <li>Fiori Design Guidelines — responsive enterprise UX</li>
-          <li>Custom UI validations + advanced OData modeling</li>
-          <li>Mobile-first enterprise-grade interface</li>
-        </ul>
-        <div class="proj-tags">
-          <span class="ptag">SAP UI5</span><span class="ptag">Fiori</span><span class="ptag">ABAP OData</span><span class="ptag">MVC</span>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-num">02</div>
-        <div class="proj-status">Active</div>
-        <div class="proj-name">ENGINE HEALTH AI</div>
-        <div class="proj-sub">Predictive Maintenance Tool</div>
-        <ul class="proj-desc">
-          <li>Real-time fault detection via CNN & LSTM models</li>
-          <li>Predictive maintenance from live sensor streams</li>
-          <li>Multi-class engine fault classification</li>
-          <li>REST API deployed with Flask backend</li>
-          <li>Reduces downtime via AI-driven anomaly detection</li>
-        </ul>
-        <div class="proj-tags">
-          <span class="ptag">Python</span><span class="ptag">CNN / LSTM</span><span class="ptag">TensorFlow</span><span class="ptag">Flask</span>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-num">03</div>
-        <div class="proj-status">Complete</div>
-        <div class="proj-name">GAME SPEC PLATFORM</div>
-        <div class="proj-sub">Game Metrics Web Portal</div>
-        <ul class="proj-desc">
-          <li>High-performance portal for game specification data</li>
-          <li>Advanced state management + data fetching</li>
-          <li>Dynamic filtering, search & comparison tools</li>
-          <li>Optimized component rendering architecture</li>
-        </ul>
-        <div class="proj-tags">
-          <span class="ptag">React.js</span><span class="ptag">MongoDB</span><span class="ptag">Node.js</span>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-num">04</div>
-        <div class="proj-status">Complete</div>
-        <div class="proj-name">DAIRY FARM MGMT</div>
-        <div class="proj-sub">Farm Operations System</div>
-        <ul class="proj-desc">
-          <li>Component-based Angular + TypeScript architecture</li>
-          <li>Secure inventory tracking via Oracle DB</li>
-          <li>Fully digitized farm operations platform</li>
-          <li>Role-based multi-user access control</li>
-        </ul>
-        <div class="proj-tags">
-          <span class="ptag">Angular</span><span class="ptag">Oracle DB</span><span class="ptag">TypeScript</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="sec-header reveal">
-      <div class="sec-num">05</div>
-      <div class="sec-title-wrap">
-        <div class="sec-eyebrow">Credentials Verified</div>
-        <div class="sec-title">EDUCATION</div>
-      </div>
-      <div class="sec-rule"></div>
-    </div>
-
-    <div class="edu-grid">
-      <div class="edu-card reveal">
-        <div class="edu-period">2021 — 2025</div>
-        <div class="edu-inst">Narasaraopeta Engineering College</div>
-        <div class="edu-deg">B.Tech — Computer Science & Engineering</div>
-        <div class="edu-score">8.08 <span>CGPA</span></div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-period">Intermediate</div>
-        <div class="edu-inst">Sri Sai Junior College</div>
-        <div class="edu-deg">Intermediate — MPC</div>
-        <div class="edu-score">6.60 <span>CGPA</span></div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-period">Secondary</div>
-        <div class="edu-inst">Bhashyam High School</div>
-        <div class="edu-deg">Secondary School Certificate (SSC)</div>
-        <div class="edu-score">9.0 <span>GPA</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OBJECTIVES -->
-  <section id="objectives">
-    <div class="sec-header reveal">
-      <div class="sec-num">06</div>
-      <div class="sec-title-wrap">
-        <div class="sec-eyebrow">Active Tasks</div>
-        <div class="sec-title">MISSION QUEUE</div>
-      </div>
-      <div class="sec-rule"></div>
-    </div>
-
-    <div class="obj-grid">
-      <div class="obj-card reveal">
-        <div class="obj-icon">🔭</div>
-        <div class="obj-title">In Development</div>
-        <div class="obj-text">Refining RASAD with advanced OData modeling and custom UX validation framework flows.</div>
-      </div>
-      <div class="obj-card reveal">
-        <div class="obj-icon">🌱</div>
-        <div class="obj-title">Skill Expansion</div>
-        <div class="obj-text">Mastering SAP Fiori Launchpad — Tiles, Catalogs and Groups configuration management.</div>
-      </div>
-      <div class="obj-card reveal">
-        <div class="obj-icon">⚡</div>
-        <div class="obj-title">Technical Edge</div>
-        <div class="obj-text">SAPUI5 Debugging & Enterprise Performance Optimization and profiling techniques.</div>
-      </div>
-      <div class="obj-card reveal">
-        <div class="obj-icon">🤖</div>
-        <div class="obj-title">AI Research</div>
-        <div class="obj-text">Exploring AI/ML integration within SAP BTP and Fiori extension scenarios.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-head reveal">HANDSHAKE.INIT</div>
-    <div class="contact-sub reveal">Connection available — awaiting your move</div>
-    <div class="contact-links reveal">
-      <a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284" class="clink" target="_blank">
-        <span>💼 LinkedIn</span>
-      </a>
-      <a href="mailto:ameenkhan5256@gmail.com" class="clink">
-        <span>📡 Email</span>
-      </a>
-      <a href="https://github.com/ameenkhan5256" class="clink" target="_blank">
-        <span>⌨ GitHub</span>
-      </a>
-      <a href="tel:+966548359561" class="clink">
-        <span>📞 +966 54 835 9561</span>
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="f-left">AMEEN UL HASSAN KHAN — SAP UI5 & FIORI DEVELOPER</div>
-    <div class="f-right">ameenkhan5256@gmail.com · Riyadh, KSA · 2025</div>
-  </footer>
-
-</div><!-- /content -->
-
-<script>
-/* CURSOR */
-(function(){
-  const c = document.getElementById('cursor');
-  const d = document.getElementById('cursor-dot');
-  let mx=0,my=0,cx=0,cy=0;
-  document.addEventListener('mousemove',e=>{
-    mx=e.clientX; my=e.clientY;
-    d.style.left=(mx-2)+'px'; d.style.top=(my-2)+'px';
-  });
-  (function anim(){
-    cx+=(mx-cx)*0.12; cy+=(my-cy)*0.12;
-    c.style.left=(cx-14)+'px'; c.style.top=(cy-14)+'px';
-    requestAnimationFrame(anim);
-  })();
-  document.addEventListener('mousedown',()=>c.style.transform='scale(0.6)');
-  document.addEventListener('mouseup',()=>c.style.transform='scale(1)');
-  document.querySelectorAll('a,button,.sbadge,.chip').forEach(el=>{
-    el.addEventListener('mouseenter',()=>c.style.transform='scale(1.8)');
-    el.addEventListener('mouseleave',()=>c.style.transform='scale(1)');
-  });
-})();
-
-/* SCROLL REVEAL */
-(function(){
-  const obs = new IntersectionObserver(entries=>{
-    entries.forEach((e,i)=>{
-      if(e.isIntersecting){
-        e.target.style.transitionDelay=(i*0.07)+'s';
-        e.target.classList.add('on');
-      }
-    });
-  },{threshold:0.1});
-  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-})();
-
-/* SKILL BARS */
-(function(){
-  const panel = document.getElementById('skills-panel');
-  if(!panel) return;
-  const obs = new IntersectionObserver(entries=>{
-    if(entries[0].isIntersecting){
-      document.querySelectorAll('.skill-fill').forEach(bar=>{
-        setTimeout(()=>bar.style.width=bar.dataset.w+'%',300);
-      });
-      obs.disconnect();
-    }
-  },{threshold:0.3});
-  obs.observe(panel);
-})();
-
-/* NAV ACTIVE */
-(function(){
-  const sections = document.querySelectorAll('section[id]');
-  const links = document.querySelectorAll('.nav-links a');
-  const obs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        links.forEach(l=>{
-          l.style.color = l.getAttribute('href')==='#'+e.target.id ? '#ffffff' : '';
-        });
-      }
-    });
-  },{threshold:0.4});
-  sections.forEach(s=>obs.observe(s));
-})();
-</script>
-</body>
-</html>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:003b00,100:00ff41&height=220&section=header&text=%3E%20AMEEN_UL_HASSAN_KHAN&fontSize=44&fontColor=00FF41&fontAlignY=42&desc=SAP-UI5%20%7C%20FIORI%20%7C%20FULL-STACK%20%7C%20AI%20ENGINEER&descSize=16&descAlignY=65&descColor=39D353&animation=fadeIn" width="100%"/>
+
+<img src="https://komarev.com/ghpvc/?username=ameenkhan5256&label=VISITORS&color=00FF41&style=flat-square" />
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-00FF41?style=flat-square&labelColor=0D0D0D" />
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/INDIA-🇮🇳-00FF41?style=flat-square&labelColor=0D0D0D" />
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/RIYADH-🇸🇦-00FF41?style=flat-square&labelColor=0D0D0D" />
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=900&color=00FF41&background=00000000&center=true&vCenter=true&width=800&height=48&lines=root%40ameen%3A~%24+whoami;%3E+SAP+UI5+%26+Fiori+Developer+%40+Global+Drive+IT+Solutions;root%40ameen%3A~%24+cat+roles.txt;%3E+OData+V2%2FV4+%26+SAP+Gateway+Expert...;%3E+MVC+Architecture+Specialist...;%3E+Full-Stack+Cloud+Engineer...;%3E+CNN+%26+LSTM+Deep+Learning+Engineer...;root%40ameen%3A~%24+echo+%24STATUS;%3E+OPEN_TO_OPPORTUNITIES%3Dtrue+%E2%9C%93" />
+
+<br/><br/>
+
+<a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284">
+  <img src="https://img.shields.io/badge/_%3E_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D" />
+</a>
+&nbsp;
+<a href="mailto:ameenkhan5256@gmail.com">
+  <img src="https://img.shields.io/badge/_%3E_EMAIL-00FF41?style=for-the-badge&logo=gmail&logoColor=00FF41&labelColor=0D0D0D" />
+</a>
+&nbsp;
+<a href="https://github.com/ameenkhan5256">
+  <img src="https://img.shields.io/badge/_%3E_GITHUB-FFFFFF?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0D" />
+</a>
+
+</div>
+
+<br/>
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 01. SYSTEM.IDENTIFICATION`
+
+<img align="right" width="270" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
+
+```bash
+root@ameen:~$ cat /etc/developer.conf
+
+NAME       = "Ameen Ul Hassan Khan"
+LOCATION   = "Andhra Pradesh, India 🇮🇳  |  Riyadh, Saudi Arabia 🇸🇦"
+DEGREE     = "B.Tech CSE  |  8.08 CGPA"
+INSTITUTE  = "Narasaraopeta Engineering College"
+
+ROLE[0]    = "SAP Fiori Developer @ Global Drive IT Solutions"
+ROLE[1]    = "MVC Architecture Specialist"
+ROLE[2]    = "OData V2/V4 + Gateway Expert"
+ROLE[3]    = "Full-Stack Engineer"
+ROLE[4]    = "Deep Learning Engineer (CNN/LSTM)"
+
+SAP_TOOLS  = ["BAS","NetWeaver","Gateway","Launchpad","S/4HANA","CDS Views"]
+STATUS     = "OPEN_TO_OPPORTUNITIES ✓"
+MISSION    = "Build enterprise-grade, seamless UX on the SAP ecosystem"
+
+root@ameen:~$ █
+```
+
+<br clear="right"/>
+
+---
+
+## `// 02. PROFESSIONAL.BRIEF ── BIO`
+
+```bash
+root@ameen:~$ cat bio.txt
+```
+
+> **SAP UI5 & Fiori Developer** currently building enterprise dashboards and OData-integrated applications at **Global Drive IT Solutions, Riyadh**. I specialize in the end-to-end SAP ecosystem — from XML Views and MVC architecture to CDS Views, Adobe Forms, and S/4HANA role management — delivering responsive, Fiori-compliant UX that bridges business logic and real-time data. Beyond the SAP stack, I engineer AI-powered solutions using CNN and LSTM models, and build full-stack web platforms with React, Angular, Node.js, and MongoDB.
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 03. EXPERIENCE.LOG ── ACTIVE`
+
+```bash
+root@ameen:~$ cat /var/log/experience.log
+```
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  EMPLOYER  :  Global Drive IT Solutions                                     ║
+║  TITLE     :  SAP Fiori Developer                                           ║
+║  LOCATION  :  Riyadh, Saudi Arabia 🇸🇦                                      ║
+║  PERIOD    :  2025 — Present  [ACTIVE]                                      ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ▸  Designed & developed SAP Fiori/UI5 dashboards for data visualization   ║
+║  ▸  Managed roles & authorizations in SAP S/4HANA Public Cloud             ║
+║  ▸  Developed & tested Adobe Forms for efficient document processing        ║
+║  ▸  Implemented OData services (full CRUD) for real-time data integration  ║
+║  ▸  Created CDS Views for optimized data retrieval and performance         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+  >> 1 active contract. System stable. ✓
+```
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 04. TECH.STACK ── MODULES LOADED`
+
+```bash
+root@ameen:~$ import --all modules && echo "OK"
+```
+
+<div align="center">
+
+**`[ SAP ECOSYSTEM ]`**
+
+<img src="https://img.shields.io/badge/SAP_UI5-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/SAP_FIORI-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/SAP_BAS-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/OData_V2/V4-►_LOADED-00FF41?style=flat-square&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/ABAP-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/SAP_GATEWAY-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/FIORI_LAUNCHPAD-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/SAP_BTP-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/S/4HANA-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/CDS_Views-►_LOADED-00FF41?style=flat-square&logo=sap&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/Adobe_Forms-►_LOADED-00FF41?style=flat-square&logo=adobe&logoColor=00FF41&labelColor=0D0D0D" />
+
+<br/><br/>
+
+**`[ FRONTEND ]`**
+
+<img src="https://skillicons.dev/icons?i=js,ts,html,css,react,angular&theme=dark&perline=6" />
+
+<br/><br/>
+
+**`[ BACKEND & DATABASE ]`**
+
+<img src="https://skillicons.dev/icons?i=nodejs,python,flask,mongodb,mysql,aws&theme=dark&perline=6" />
+
+<br/><br/>
+
+**`[ DEVOPS & TOOLS ]`**
+
+<img src="https://skillicons.dev/icons?i=git,github,bitbucket,vscode,figma&theme=dark&perline=5" />
+
+<br/><br/>
+
+**`[ AI / ML ENGINE ]`**
+
+<img src="https://img.shields.io/badge/TensorFlow-►_ACTIVE-FF6F00?style=flat-square&logo=tensorflow&logoColor=FF6F00&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/Keras-►_ACTIVE-D00000?style=flat-square&logo=keras&logoColor=D00000&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/CNN-►_ACTIVE-00FF41?style=flat-square&logo=python&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/LSTM-►_ACTIVE-00FF41?style=flat-square&logo=python&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/XGBoost-►_ACTIVE-00FF41?style=flat-square&logo=python&logoColor=00FF41&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/NumPy-►_ACTIVE-4DABCF?style=flat-square&logo=numpy&logoColor=4DABCF&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/Pandas-►_ACTIVE-E70488?style=flat-square&logo=pandas&logoColor=E70488&labelColor=0D0D0D" />
+
+</div>
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 05. PROJECT.ARCHIVES ── DECRYPTING`
+
+```bash
+root@ameen:~$ ls -la ~/projects/ --sort=impact
+```
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+```
+┌──────────────────────────────────────┐
+│  [PROJ-01] :: RASAD                  │
+│  STATUS  : ██████████  ACTIVE        │
+│  TYPE    : SAP Enterprise App        │
+│  STACK   : UI5 · OData · ABAP        │
+└──────────────────────────────────────┘
+```
+<img src="https://img.shields.io/badge/SAP_UI5-0FAAFF?style=flat-square&logo=sap&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/Fiori-003366?style=flat-square&logo=sap&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/ABAP_OData-E44C30?style=flat-square&labelColor=0D0D0D"/>
+
+**Business Logic:** Enterprise player metrics analytics dashboard built on SAP S/4HANA with real-time OData data pipelines.
+
+- `▸` Full **CRUD** operations + complex Data Binding & View Routing
+- `▸` ABAP OData services mapped to responsive XML Views
+- `▸` Fiori Design Guidelines — mobile-first enterprise UX
+- `▸` Custom validations + advanced OData entity modeling
+
+**Key Achievement:** Delivered an end-to-end Fiori-compliant dashboard reducing manual reporting effort by centralizing data-driven decision-making.
+
+</td>
+<td width="50%" valign="top">
+
+```
+┌──────────────────────────────────────┐
+│  [PROJ-02] :: ENGINE_HEALTH_AI       │
+│  STATUS  : ██████████  ACTIVE        │
+│  TYPE    : AI / Deep Learning        │
+│  STACK   : Python · CNN · LSTM        │
+└──────────────────────────────────────┘
+```
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/Flask-FFFFFF?style=flat-square&logo=flask&logoColor=black&labelColor=0D0D0D"/>
+
+**Business Logic:** Predictive maintenance system ingesting live vehicle sensor streams to classify faults before physical failure occurs.
+
+- `▸` Multi-class fault detection via **CNN, LSTM & XGBoost**
+- `▸` Real-time anomaly detection from sensor data streams
+- `▸` REST API deployment via **Flask** with monitoring UI
+- `▸` Aimed at reducing vehicle downtime and maintenance cost
+
+**Key Achievement:** Achieved high-accuracy multi-class classification of engine faults enabling proactive maintenance scheduling.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+```
+┌──────────────────────────────────────┐
+│  [PROJ-03] :: GAME_SPEC_PLATFORM     │
+│  STATUS  : ████████░░  COMPLETE      │
+│  TYPE    : Full-Stack Web App        │
+│  STACK   : React · Node · MongoDB    │
+└──────────────────────────────────────┘
+```
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=0D0D0D"/>
+
+**Business Logic:** High-performance portal for browsing and comparing game hardware specifications with advanced filtering.
+
+- `▸` Advanced **State Management** + dynamic filtering/comparison engine
+- `▸` MongoDB backend for flexible, scalable spec storage
+- `▸` Optimized component rendering for cross-device performance
+- `▸` Responsive Web Design ensuring full mobile compatibility
+
+**Key Achievement:** Streamlined specification lookup speed through optimized data retrieval and component-level rendering strategies.
+
+</td>
+<td width="50%" valign="top">
+
+```
+┌──────────────────────────────────────┐
+│  [PROJ-04] :: DAIRY_FARM_MGMT        │
+│  STATUS  : ████████░░  COMPLETE      │
+│  TYPE    : Enterprise Web App        │
+│  STACK   : Angular · TypeScript · Oracle│
+└──────────────────────────────────────┘
+```
+<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/Oracle_DB-F80000?style=flat-square&logo=oracle&logoColor=white&labelColor=0D0D0D"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white&labelColor=0D0D0D"/>
+
+**Business Logic:** Digitization platform replacing manual dairy farm operations, inventory tracking, and role-based access control.
+
+- `▸` **Component-based** Angular + TypeScript reusable architecture
+- `▸` Secure, normalized inventory management via Oracle DB
+- `▸` Role-based multi-user access control system
+- `▸` Interactive dashboards built in HTML5 & CSS3
+
+**Key Achievement:** Fully digitized farm operations, eliminating manual record-keeping and introducing secure multi-user workflows.
+
+</td>
+</tr>
+</table>
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 06. SKILL.MATRIX ── BENCHMARK`
+
+```
+╔═══════════════════════════════════════════════════════════════════════╗
+║                   SKILL DIAGNOSTICS — BENCHMARK OUTPUT               ║
+╠══════════════════════════╦═══════════════════════════╦═══════════════╣
+║  MODULE                  ║  SCORE                    ║  LEVEL        ║
+╠══════════════════════════╬═══════════════════════════╬═══════════════╣
+║  SAP UI5 / Fiori         ║  ████████████████████░░   ║  [ 95/100 ]   ║
+║  OData V2 / V4           ║  ███████████████████░░░   ║  [ 90/100 ]   ║
+║  JavaScript / TypeScript ║  ███████████████████░░░   ║  [ 90/100 ]   ║
+║  ABAP / SAP Gateway      ║  █████████████████░░░░░   ║  [ 85/100 ]   ║
+║  CDS Views / S/4HANA     ║  ████████████████░░░░░░   ║  [ 82/100 ]   ║
+║  React.js                ║  ████████████████░░░░░░   ║  [ 80/100 ]   ║
+║  Python / Deep Learning  ║  ███████████████░░░░░░░   ║  [ 75/100 ]   ║
+║  Angular                 ║  █████████████░░░░░░░░░   ║  [ 70/100 ]   ║
+║  MongoDB / Oracle DB     ║  ████████████░░░░░░░░░░   ║  [ 65/100 ]   ║
+╠══════════════════════════╩═══════════════════════════╩═══════════════╣
+║  >> All diagnostics passed. System operational. No failures.         ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 07. EDU.LOG ── RECORDS VERIFIED`
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  root@ameen:~$ cat /var/log/education.log                           ║
+╠════════════════════════════════╦══════════════════╦═════════════════╣
+║  INSTITUTION                   ║  QUALIFICATION   ║  SCORE          ║
+╠════════════════════════════════╬══════════════════╬═════════════════╣
+║  Narasaraopeta Engg. College   ║  B.Tech CSE      ║  8.08 CGPA ★   ║
+║  [ 2021 — 2025 ]               ║  Computer Sci.   ║  ██████████     ║
+╠════════════════════════════════╬══════════════════╬═════════════════╣
+║  Sri Sai Junior College        ║  Intermediate    ║  6.60 CGPA      ║
+╠════════════════════════════════╬══════════════════╬═════════════════╣
+║  Bhashyam High School          ║  SSC (10th)      ║  9.0  GPA  ★    ║
+╚════════════════════════════════╩══════════════════╩═════════════════╝
+  >> Records parsed. No anomalies detected. ✓
+```
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 08. CERTIFICATIONS.LOG ── VERIFIED`
+
+```
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  root@ameen:~$ cat /var/log/certifications.log                           ║
+╠═══════════════════════════╦═══════════════════════════════════════════════╣
+║  ISSUER                   ║  CERTIFICATION                                ║
+╠═══════════════════════════╬═══════════════════════════════════════════════╣
+║  Eduskills / AWS          ║  AWS Cloud Virtual Internship  ✓              ║
+╠═══════════════════════════╬═══════════════════════════════════════════════╣
+║  AICTE / SkillDzire       ║  Artificial Intelligence Short-Term Intern ✓  ║
+╚═══════════════════════════╩═══════════════════════════════════════════════╝
+  >> 2 credentials loaded. Verified. ✓
+```
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 09. REPO.GUIDELINES ── STANDARDS`
+
+```bash
+root@ameen:~$ cat CONTRIBUTING.md
+```
+
+```
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  COMMIT MESSAGE CONVENTION                                               ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║  feat(ui):     add responsive filter panel to RASAD dashboard            ║
+║  fix(odata):   resolve CSRF token error on PATCH requests                ║
+║  refactor(mvc): split controller logic into service layer                ║
+║  docs(readme): update architecture diagram for Engine Health AI          ║
+║  test(crud):   add unit tests for OData entity set creation              ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║  BRANCH STRATEGY                                                         ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║  main          → production-ready, protected                             ║
+║  develop        → integration branch for feature merges                  ║
+║  feature/<name> → e.g. feature/rasad-routing-fix                        ║
+║  hotfix/<name>  → e.g. hotfix/odata-binding-null-check                  ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║  REPOSITORY MUST-HAVES (per repo)                                        ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║  ✓  README.md  with Business Logic, Stack, Screenshots, Setup Guide      ║
+║  ✓  .gitignore tailored to the framework (UI5 / React / Python)          ║
+║  ✓  /docs      folder with architecture diagram or flow diagram          ║
+║  ✓  Inline code comments for complex OData bindings or ML model logic    ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+```
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+## `// 10. MISSION.QUEUE ── CRON JOBS`
+
+```
+╔══════════════════════════════════════════════════════════════════════════╗
+║  root@ameen:~$ crontab -l                                               ║
+╠══════════════╦═══════════════════════════════════════════════════════════╣
+║  CRON_001    ║  🔭  Deepening RASAD — CDS Views, Adobe Forms,           ║
+║              ║      and advanced S/4HANA role management workflows       ║
+╠══════════════╬═══════════════════════════════════════════════════════════╣
+║  CRON_002    ║  🌱  Mastering SAP Fiori Launchpad —                      ║
+║              ║      Tiles, Catalogs & Groups configuration               ║
+╠══════════════╬═══════════════════════════════════════════════════════════╣
+║  CRON_003    ║  ⚡  SAPUI5 Performance Profiling + Enterprise            ║
+║              ║      Debugging and Code Inspector techniques              ║
+╠══════════════╬═══════════════════════════════════════════════════════════╣
+║  CRON_004    ║  🤖  AI/ML integration within SAP BTP                     ║
+║              ║      and Fiori extension scenarios                        ║
+╚══════════════╩═══════════════════════════════════════════════════════════╝
+  >> 4 jobs active. 0 failed. System stable. ✓
+```
+
+<br/>
+
+<div align="center">
+
+```
+root@ameen:~$ ./connect --protocol=handshake
+> PING successful. Ready to collaborate.
+> Available channels: LinkedIn | Email | GitHub
+> Awaiting your message...
+```
+
+<br/>
+
+<a href="https://linkedin.com/in/ameen-ul-hassan-khan-420532284">
+  <img src="https://img.shields.io/badge/_%3E_CONNECT_VIA_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D" />
+</a>
+&nbsp;
+<a href="mailto:ameenkhan5256@gmail.com">
+  <img src="https://img.shields.io/badge/_%3E_SEND_EMAIL-00FF41?style=for-the-badge&logo=gmail&logoColor=00FF41&labelColor=0D0D0D" />
+</a>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1200&color=00FF41&center=true&vCenter=true&width=700&lines=//+EOF+—+Thanks+for+reading+this+README.md;root%40ameen%3A~%24+logout+--save-session+%E2%96%88" />
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,60:003b00,100:000000&height=120&section=footer&animation=fadeIn" width="100%"/>
+
+</div>

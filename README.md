@@ -1,466 +1,293 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:1a1a1a,100:2e2e2e&height=260&section=header&text=AMEEN%20UL%20HASSAN%20KHAN&fontSize=50&fontColor=ffffff&fontAlignY=40&desc=SAP%20UI5%20%26%20Fiori%20Developer%20%7C%20S%2F4HANA%20Public%20Cloud%20%7C%20OData%20%7C%20CDS%20Views%20%7C%20Adobe%20Forms&descSize=15&descAlignY=62&descColor=999999&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:1a1a1a,100:ffffff&height=240&section=header&text=AMEEN_UL_HASSAN_KHAN&fontSize=46&fontColor=ffffff&fontAlignY=42&desc=SAP-UI5%20%7C%20FIORI%20%7C%20FULL-STACK%20%7C%20AI%20ENGINEER&descSize=17&descAlignY=65&descColor=aaaaaa&animation=fadeIn" width="100%"/>
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier+Prime&weight=700&size=21&pause=1000&color=FFFFFF&background=00000000&center=true&vCenter=true&width=900&height=52&lines=root%40ameen%3A~%24+whoami;%3E+SAP+UI5+%26+Fiori+Developer+%40+Global+Drive+Technologies%2C+Riyadh;root%40ameen%3A~%24+cat+expertise.txt;%3E+OData+V2%2FV4+%7C+CDS+Views+%7C+30%2B+Adobe+Forms+Delivered;%3E+MVC+Architecture+%7C+XML+Views+%7C+Routing+%7C+Data+Binding;%3E+Fiori+Launchpad+%7C+Adapt+UI+%7C+S%2F4HANA+Public+Cloud;root%40ameen%3A~%24+echo+%24STATUS;%3E+OPEN_TO_SAP_OPPORTUNITIES+%3D+true+%E2%9C%93)](https://git.io/typing-svg)
+![](https://komarev.com/ghpvc/?username=ameenkhan5256&label=VISITORS&color=ffffff&style=flat-square&labelColor=0D0D0D)
+&nbsp;
+![](https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-ffffff?style=flat-square&labelColor=0D0D0D)
+&nbsp;
+![](https://img.shields.io/badge/LOCATION-Riyadh%20🇸🇦-ffffff?style=flat-square&labelColor=0D0D0D)
+&nbsp;
+![](https://img.shields.io/badge/ORIGIN-India%20🇮🇳-ffffff?style=flat-square&labelColor=0D0D0D)
 
 <br/>
 
-![](https://img.shields.io/badge/SAP_UI5-Expert-ffffff?style=for-the-badge&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![](https://img.shields.io/badge/SAP_FIORI-Expert-ffffff?style=for-the-badge&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![](https://img.shields.io/badge/S%2F4HANA_Cloud-Active-ffffff?style=for-the-badge&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![](https://img.shields.io/badge/OData_V2%2FV4-Expert-ffffff?style=for-the-badge&labelColor=0D0D0D)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier+Prime&weight=700&size=20&pause=900&color=FFFFFF&background=00000000&center=true&vCenter=true&width=860&height=50&lines=%3E+SAP+UI5+%26+Fiori+Developer+%40+Global+Drive+IT+Solutions;%3E+OData+V2%2FV4+%7C+CDS+Views+%7C+Adobe+Forms+%7C+S%2F4HANA;%3E+CNN+%26+LSTM+Deep+Learning+Engineer;%3E+OPEN_TO_OPPORTUNITIES+%3D+true+%E2%9C%93)](https://git.io/typing-svg)
 
-<br/><br/>
+<br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0D0D0D)](https://linkedin.com/in/ameen-ul-hassan-khan-420532284)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D)](https://linkedin.com/in/ameen-ul-hassan-khan-420532284)
 &nbsp;
-[![Email](https://img.shields.io/badge/Email-ameenkhan5256%40gmail.com-ffffff?style=flat-square&logo=gmail&logoColor=white&labelColor=0D0D0D)](mailto:ameenkhan5256@gmail.com)
+[![Email](https://img.shields.io/badge/EMAIL-ffffff?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0D0D0D)](mailto:ameenkhan5256@gmail.com)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-ameenkhan5256-ffffff?style=flat-square&logo=github&logoColor=white&labelColor=0D0D0D)](https://github.com/ameenkhan5256)
+[![GitHub](https://img.shields.io/badge/GITHUB-ffffff?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0D)](https://github.com/ameenkhan5256)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-ffffff?style=flat-square&logo=vercel&logoColor=white&labelColor=0D0D0D)](https://ameenkhan1722.github.io/mr.khan_portfolio/)
-&nbsp;
-![Visitors](https://komarev.com/ghpvc/?username=ameenkhan5256&label=Profile+Views&color=ffffff&style=flat-square&labelColor=0D0D0D)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-ffffff?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0D0D0D)](https://ameenkhan1722.github.io/mr.khan_portfolio/)
 
 </div>
 
-<br/>
+---
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 01 — SYSTEM.IDENTIFICATION`
+## 🖥️ System Identification
 
 <img align="right" width="260" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  $ cat /etc/developer.conf                                          │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  NAME         =  "Ameen Ul Hassan Khan"                             │
-│  LOCATION     =  "Riyadh, Saudi Arabia 🇸🇦  |  India 🇮🇳"           │
-│  DEGREE       =  "B.Tech — Computer Science Engineering"            │
-│  CGPA         =  "8.08  |  Narasaraopeta Engineering College"       │
-│                                                                     │
-│  CURRENT_ROLE =  "SAP Fiori Developer"                              │
-│  EMPLOYER     =  "Global Drive Technologies Pvt. Ltd., Riyadh"     │
-│  ENVIRONMENT  =  "SAP S/4HANA Public Cloud"                         │
-│                                                                     │
-│  SAP_CORE     =  [ UI5, Fiori, OData V2/V4, CDS Views ]            │
-│  SAP_TOOLS    =  [ BAS, NetWeaver, Gateway, Launchpad, SAP GUI ]   │
-│  SAP_DELIVERY =  [ Adobe Forms x30+, Adapt UI, Transport Reqs ]    │
-│                                                                     │
-│  STATUS       =  "OPEN_TO_SAP_OPPORTUNITIES  ✓"                     │
-│                                                                     │
-│  $  _                                                               │
-└─────────────────────────────────────────────────────────────────────┘
-```
+| Key | Value |
+|-----|-------|
+| **Name** | Ameen Ul Hassan Khan |
+| **Location** | Riyadh, Saudi Arabia 🇸🇦 \| India 🇮🇳 |
+| **Role** | SAP UI5 & Fiori Developer |
+| **Employer** | Global Drive Technologies Pvt Limited |
+| **Degree** | B.Tech CSE — 8.08 CGPA |
+| **Institute** | Narasaraopeta Engineering College |
+| **SAP Tools** | BAS · Gateway · S/4HANA · CDS Views |
+| **AI Stack** | CNN · LSTM · TensorFlow |
+| **Status** | `FOCUSING` |
 
 <br clear="right"/>
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
+---
 
-## `// 02 — PROFESSIONAL.SUMMARY`
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  $ cat summary.txt                                                          │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
-> I am an **SAP UI5 & Fiori Developer** with production experience delivering scalable enterprise applications within **SAP S/4HANA Public Cloud**. My expertise spans the full SAP frontend stack — from **XML Views, MVC architecture, and OData integration** to **CDS Views, Adobe Forms configuration, and Fiori Launchpad management**.
->
-> I develop **end-to-end Fiori applications** using **SAP Business Application Studio**, strictly following Fiori Design Guidelines to deliver responsive, intuitive, and role-based user experiences. I bridge business requirements with real-time data by integrating UI5 frontends with **OData V2/V4 services** implementing full CRUD operations.
->
-> Beyond development, I manage **Transport Requests**, configure **role-based authorization**, and extend standard Fiori apps through **Adapt UI** — ensuring clean, maintainable, and compliant enterprise solutions.
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 03 — EXPERIENCE.LOG`
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  $ cat /var/log/experience.log                                              │
-├───────────────────────┬─────────────────────────────────────────────────────┤
-│  EMPLOYER             │  Global Drive Technologies Pvt. Limited             │
-│  ROLE                 │  SAP UI5 & Fiori Developer                          │
-│  LOCATION             │  Riyadh, Saudi Arabia  🇸🇦                           │
-│  PERIOD               │  February 2026 — Present   [ ACTIVE ]              │
-│  ENVIRONMENT          │  SAP S/4HANA Public Cloud                           │
-│  IDE                  │  SAP Business Application Studio (BAS)              │
-└───────────────────────┴─────────────────────────────────────────────────────┘
-```
-
-<br/>
-
-**🔷 Fiori Application Development**
-
-- Developed **SAP UI5 Freestyle applications** in SAP S/4HANA Public Cloud using MVC architecture, routing, and advanced data binding — built entirely within **SAP Business Application Studio**
-- Delivered responsive, role-based UIs strictly following **SAP Fiori Design Guidelines** for enterprise-grade user experience
-
-**🔷 OData Integration — Full CRUD**
-
-- Integrated UI5 applications with **OData V2/V4 services** implementing Create, Read, Update, and Delete operations
-- Mapped **Entity Sets and Entity Types** via **SAP NetWeaver Gateway (SEGW)** with JSON Model and OData Model binding
-
-**🔷 CDS Views & Data Modeling**
-
-- Designed and implemented **CDS Views** for optimized backend data modeling and efficient Fiori data consumption
-- Collaborated with ABAP developers to align UI5 data requirements with backend service definitions
-
-**🔷 Adobe Forms — 30+ Delivered**
-
-- Configured **30+ Adobe Forms** in the **SAP S/4HANA Customizing Tenant (Client 100)** covering procurement, finance, and operational documents
-- Standardized document output across business units ensuring consistent, compliant form generation
-
-**🔷 Fiori Launchpad & Adapt UI**
-
-- Configured **Fiori Launchpad** Tiles, Catalogs, and Groups for structured, role-based application navigation
-- Extended standard Fiori applications using **Adapt UI** — customizing fields, layouts, and business logic **without modifying core applications**
-
-**🔷 Transport & Authorization Management**
-
-- Created and monitored **Transport Requests (TRs)** to ensure controlled, traceable movement of changes across system landscapes
-- Administered **user creation, role assignments, and authorization management** in SAP S/4HANA for RBAC compliance
-
-**🔷 Performance & Debugging**
-
-- Optimized UI5 application performance using **SAPUI5 Code Inspector** and debugging tools for faster load times and smoother execution
-- Self-initiated project **RASAD** — a complete Fiori analytics dashboard built with complex data binding and custom UI validations
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 04 — SAP.TECH.STACK ── MODULES LOADED`
-
-<div align="center">
-
-**`[ SAP ECOSYSTEM — PRIMARY ]`**
-
-![SAP UI5](https://img.shields.io/badge/SAP_UI5-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![SAP Fiori](https://img.shields.io/badge/SAP_Fiori-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![SAP BAS](https://img.shields.io/badge/SAP_BAS-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![OData V2](https://img.shields.io/badge/OData_V2-LOADED-ffffff?style=flat-square&labelColor=0D0D0D)
-![OData V4](https://img.shields.io/badge/OData_V4-LOADED-aaaaaa?style=flat-square&labelColor=0D0D0D)
-![ABAP](https://img.shields.io/badge/ABAP_(Foundational)-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
-![SAP Gateway](https://img.shields.io/badge/SAP_NetWeaver_Gateway-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![Fiori Launchpad](https://img.shields.io/badge/Fiori_Launchpad-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![Fiori Elements](https://img.shields.io/badge/Fiori_Elements-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
-![Adapt UI](https://img.shields.io/badge/Adapt_UI-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![SAP BTP](https://img.shields.io/badge/SAP_BTP-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
-![S/4HANA Cloud](https://img.shields.io/badge/S%2F4HANA_Public_Cloud-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![CDS Views](https://img.shields.io/badge/CDS_Views-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
-![Adobe Forms](https://img.shields.io/badge/Adobe_Forms_30%2B-LOADED-ffffff?style=flat-square&logo=adobe&logoColor=ffffff&labelColor=0D0D0D)
-![Transport Requests](https://img.shields.io/badge/Transport_Requests-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
-![SAP GUI](https://img.shields.io/badge/SAP_GUI-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
-
-<br/>
-
-**`[ WEB TECHNOLOGIES — UI5 SUPPORT LAYER ]`**
-
-[![Skills](https://skillicons.dev/icons?i=js,ts,html,css&theme=dark&perline=4)](https://skillicons.dev)
-
-<br/>
-
-**`[ VERSION CONTROL & DEVOPS ]`**
-
-[![Skills](https://skillicons.dev/icons?i=git,github,bitbucket,vscode&theme=dark&perline=4)](https://skillicons.dev)
-
-</div>
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 05 — SKILL.MATRIX ── SAP BENCHMARK`
-
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║              SAP SKILL DIAGNOSTICS — PROFICIENCY BENCHMARK                  ║
-╠════════════════════════════════╦═══════════════════════════╦════════════════╣
-║  SAP MODULE                    ║  SCORE                    ║  LEVEL         ║
-╠════════════════════════════════╬═══════════════════════════╬════════════════╣
-║  SAP UI5 / SAPUI5 Framework    ║  ██████████████████████░  ║  [ 95/100 ] 🔥 ║
-║  Fiori Design Guidelines       ║  ██████████████████████░  ║  [ 95/100 ] 🔥 ║
-║  OData V2 — Full CRUD          ║  █████████████████████░░  ║  [ 92/100 ] 🔥 ║
-║  Adobe Forms  (30+ Delivered)  ║  █████████████████████░░  ║  [ 90/100 ] ✅ ║
-║  XML Views + Fragments         ║  █████████████████████░░  ║  [ 90/100 ] ✅ ║
-║  MVC + Routing Architecture    ║  █████████████████████░░  ║  [ 90/100 ] ✅ ║
-║  Data Binding + JSON Models    ║  ████████████████████░░░  ║  [ 88/100 ] ✅ ║
-║  Fiori Launchpad Configuration ║  ████████████████████░░░  ║  [ 87/100 ] ✅ ║
-║  OData V4 + CDS Annotations    ║  ███████████████████░░░░  ║  [ 85/100 ] ✅ ║
-║  SAP Business App Studio       ║  ███████████████████░░░░  ║  [ 85/100 ] ✅ ║
-║  CDS Views — Data Modeling     ║  ██████████████████░░░░░  ║  [ 82/100 ] ✅ ║
-║  Adapt UI / Extend Fiori Apps  ║  ██████████████████░░░░░  ║  [ 82/100 ] ✅ ║
-║  S/4HANA Public Cloud          ║  ██████████████████░░░░░  ║  [ 80/100 ] ✅ ║
-║  SAP NetWeaver Gateway (SEGW)  ║  █████████████████░░░░░░  ║  [ 78/100 ] ✅ ║
-║  Transport Requests (TRs)      ║  █████████████████░░░░░░  ║  [ 78/100 ] ✅ ║
-║  Role & Authorization Mgmt     ║  ████████████████░░░░░░░  ║  [ 75/100 ] ✅ ║
-║  ABAP  (Foundational)          ║  ████████████████░░░░░░░  ║  [ 72/100 ] 📗 ║
-║  SAP BTP  (Exposure)           ║  █████████████░░░░░░░░░░  ║  [ 65/100 ] 📗 ║
-╠════════════════════════════════╩═══════════════════════════╩════════════════╣
-║  >>  All SAP diagnostics passed. Production-ready.  ✓                       ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 06 — PROJECT.ARCHIVES ── DECRYPTING`
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  $ ls -la ~/sap-projects/ --sort=impact                                     │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+## 💼 Experience
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td>
 
-```
-┌──────────────────────────────────────────┐
-│  [ 01 ]  RASAD                           │
-│  TYPE   : SAP Fiori Enterprise App       │
-│  STACK  : UI5 · OData · ABAP · Fiori     │
-│  STATUS : ────────────────────  ACTIVE   │
-└──────────────────────────────────────────┘
-```
+**Global Drive Technologies Pvt Limited** &nbsp; ![Active](https://img.shields.io/badge/ACTIVE-ffffff?style=flat-square&labelColor=0D0D0D)
 
-![](https://img.shields.io/badge/SAP_UI5-ffffff?style=flat-square&logo=sap&logoColor=000000&labelColor=1a1a1a)
-![](https://img.shields.io/badge/OData_V2-aaaaaa?style=flat-square&labelColor=1a1a1a)
-![](https://img.shields.io/badge/Fiori_Design-ffffff?style=flat-square&logo=sap&logoColor=000000&labelColor=1a1a1a)
-![](https://img.shields.io/badge/ABAP_Gateway-aaaaaa?style=flat-square&labelColor=1a1a1a)
+**SAP Fiori Developer** &nbsp;·&nbsp; Riyadh, Saudi Arabia &nbsp;·&nbsp; `Feb 2026 — Present`
 
-**Player Metrics Analytics Dashboard** — a professional SAP Fiori application built end-to-end with ABAP OData services.
-
-- Full **CRUD** operations with complex Data Binding
-- XML Views + Advanced **Routing** & View Navigation
-- **Fiori Design Guidelines** — mobile-first enterprise UX
-- Custom UI validations + OData entity modeling
-- Self-initiated — demonstrates complete SAP ownership
-
-> ✦ Production-standard Fiori app built independently
-
-</td>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────────┐
-│  [ 02 ]  ADOBE FORMS SUITE               │
-│  TYPE   : SAP Document Automation        │
-│  COUNT  : 30+ Forms Delivered            │
-│  STATUS : ────────────────────  LIVE     │
-└──────────────────────────────────────────┘
-```
-
-![](https://img.shields.io/badge/Adobe_Forms-ffffff?style=flat-square&logo=adobe&logoColor=000000&labelColor=1a1a1a)
-![](https://img.shields.io/badge/S%2F4HANA_Tenant-aaaaaa?style=flat-square&logo=sap&logoColor=white&labelColor=1a1a1a)
-![](https://img.shields.io/badge/Customizing_Client-ffffff?style=flat-square&labelColor=1a1a1a)
-
-**30+ Adobe Forms** configured in SAP S/4HANA Customizing Tenant covering core business document processes.
-
-- Procurement — Purchase Orders, GR Documents
-- Finance — Invoices, Payment Confirmations
-- Operations — Work Orders, Delivery Notes
-- HR — Employee Certificates & Letters
-
-> ✦ Standardized document output across all business units
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────────┐
-│  [ 03 ]  FIORI LAUNCHPAD CONFIG          │
-│  TYPE   : SAP Platform Administration    │
-│  STACK  : Launchpad · Catalogs · Tiles   │
-│  STATUS : ──────────────────  DELIVERED  │
-└──────────────────────────────────────────┘
-```
-
-![](https://img.shields.io/badge/Fiori_Launchpad-ffffff?style=flat-square&logo=sap&logoColor=000000&labelColor=1a1a1a)
-![](https://img.shields.io/badge/Tiles_%26_Catalogs-aaaaaa?style=flat-square&labelColor=1a1a1a)
-![](https://img.shields.io/badge/Role_Based_Access-ffffff?style=flat-square&labelColor=1a1a1a)
-
-Structured **Fiori Launchpad** configuration for multiple business user roles in S/4HANA Public Cloud.
-
-- Tiles, Catalogs, and Groups configuration
-- Role-based navigation structure for end-users
-- Align Launchpad layout with business process flows
-- User creation + role assignment + auth management
-
-> ✦ Improved end-user accessibility and navigation clarity
-
-</td>
-<td width="50%" valign="top">
-
-```
-┌──────────────────────────────────────────┐
-│  [ 04 ]  CDS VIEWS & ODATA SERVICES      │
-│  TYPE   : SAP Data Layer Design          │
-│  STACK  : CDS · Gateway · OData V2/V4   │
-│  STATUS : ──────────────────  DELIVERED  │
-└──────────────────────────────────────────┘
-```
-
-![](https://img.shields.io/badge/CDS_Views-ffffff?style=flat-square&logo=sap&logoColor=000000&labelColor=1a1a1a)
-![](https://img.shields.io/badge/OData_V2%2FV4-aaaaaa?style=flat-square&labelColor=1a1a1a)
-![](https://img.shields.io/badge/SAP_Gateway-ffffff?style=flat-square&logo=sap&logoColor=000000&labelColor=1a1a1a)
-
-Designed **CDS Views** and wired OData services for optimized, efficient data consumption in Fiori apps.
-
-- CDS View design with annotations
-- SEGW Entity Sets + Entity Types mapping
-- JSON Model + OData Model advanced binding
-- Transport Requests for controlled deployment
-
-> ✦ Reduced data retrieval latency across Fiori applications
+- Developed SAP UI5/Fiori apps in **S/4HANA Public Cloud** using MVC, routing, and advanced data binding via SAP BAS
+- Integrated UI5 with **OData V2/V4** (full CRUD), enabling real-time data processing
+- Designed **CDS Views** for optimized backend data consumption in Fiori apps
+- Built and configured **30+ Adobe Forms** in S/4HANA Customizing Tenant
+- Extended standard apps using **Adapt UI** without impacting core applications
+- Managed **Transport Requests** and **Fiori Launchpad** (Tiles, Catalogs, Groups)
+- Administered user creation, **role assignments**, and authorization management
 
 </td>
 </tr>
 </table>
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
+---
 
-## `// 07 — EDU.LOG ── CREDENTIALS VERIFIED`
+## ⚙️ Tech Stack
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  $ cat /var/log/education.log                                               │
-├─────────────────────────────────┬────────────────────────┬──────────────────┤
-│  INSTITUTION                    │  QUALIFICATION         │  SCORE           │
-├─────────────────────────────────┼────────────────────────┼──────────────────┤
-│  Narasaraopeta Engg. College    │  B.Tech — CSE          │  8.08 CGPA  ★    │
-│  [ 2021 — 2025 ]                │  Computer Science      │  ████████████    │
-├─────────────────────────────────┼────────────────────────┼──────────────────┤
-│  Sri Sai Junior College         │  Intermediate — MPC    │  6.60 CGPA       │
-│  [ 2019 ]                       │                        │  █████████░      │
-├─────────────────────────────────┼────────────────────────┼──────────────────┤
-│  Bhashyam High School           │  SSC — Secondary       │  9.0  GPA   ★    │
-│  [ 2018 ]                       │                        │  ████████████    │
-├─────────────────────────────────┴────────────────────────┴──────────────────┤
-│  >>  Records parsed. No anomalies detected.  ✓                              │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**SAP Ecosystem — Primary**
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 08 — CERTIFICATIONS.LOG ── VERIFIED`
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  $ cat /var/log/certifications.log                                          │
-├──────────────────────────────┬──────────────────────────────────────────────┤
-│  ISSUER                      │  CERTIFICATION                               │
-├──────────────────────────────┼──────────────────────────────────────────────┤
-│  Eduskills / AWS             │  AWS Cloud Virtual Internship           ✓    │
-├──────────────────────────────┼──────────────────────────────────────────────┤
-│  AICTE / SkillDzire          │  Artificial Intelligence — Short Term   ✓    │
-├──────────────────────────────┴──────────────────────────────────────────────┤
-│  >>  2 credentials loaded. Verified.  ✓                                     │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 09 — MISSION.QUEUE ── ACTIVE LEARNING`
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  $ crontab -l                                                               │
-├──────────────┬──────────────────────────────────────────────────────────────┤
-│  CRON_001    │  🔷  Fiori Elements — List Report · Object Page ·            │
-│              │      Analytical List Page patterns & CDS annotations         │
-├──────────────┼──────────────────────────────────────────────────────────────┤
-│  CRON_002    │  🔷  Smart Controls — SmartTable · SmartForm ·               │
-│              │      SmartFilterBar implementation in UI5                    │
-├──────────────┼──────────────────────────────────────────────────────────────┤
-│  CRON_003    │  🔷  OData V4 Advanced — Batch requests · Actions ·          │
-│              │      Functions and V4 model capabilities                     │
-├──────────────┼──────────────────────────────────────────────────────────────┤
-│  CRON_004    │  🔷  SAP BTP Integration — REST API · Cloud Foundry          │
-│              │      deployment patterns within SAP ecosystem                │
-├──────────────┼──────────────────────────────────────────────────────────────┤
-│  CRON_005    │  🔷  SAPUI5 Performance Profiling · Enterprise Debugging     │
-│              │      · Code Inspector optimization techniques                │
-├──────────────┴──────────────────────────────────────────────────────────────┤
-│  >>  5 jobs active. 0 failed. System stable.  ✓                            │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 10 — GITHUB.STATS`
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ameenkhan5256&show_icons=true&theme=dark&bg_color=0D0D0D&border_color=2a2a2a&title_color=ffffff&text_color=aaaaaa&icon_color=ffffff&hide_border=false&rank_icon=github)
-&nbsp;&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ameenkhan5256&layout=compact&theme=dark&bg_color=0D0D0D&border_color=2a2a2a&title_color=ffffff&text_color=aaaaaa&hide_border=false)
+![SAP UI5](https://img.shields.io/badge/SAP_UI5-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
+![SAP Fiori](https://img.shields.io/badge/SAP_Fiori-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
+![SAP BAS](https://img.shields.io/badge/SAP_BAS-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
+![OData](https://img.shields.io/badge/OData_V2/V4-LOADED-ffffff?style=flat-square&labelColor=0D0D0D)
+![ABAP](https://img.shields.io/badge/ABAP-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
+![SAP Gateway](https://img.shields.io/badge/SAP_Gateway-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
+![Fiori Launchpad](https://img.shields.io/badge/Fiori_Launchpad-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
+![SAP BTP](https://img.shields.io/badge/SAP_BTP-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
+![S/4HANA](https://img.shields.io/badge/S/4HANA_Cloud-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
+![CDS Views](https://img.shields.io/badge/CDS_Views-LOADED-ffffff?style=flat-square&logo=sap&logoColor=ffffff&labelColor=0D0D0D)
+![Adobe Forms](https://img.shields.io/badge/Adobe_Forms-LOADED-aaaaaa?style=flat-square&logo=adobe&logoColor=aaaaaa&labelColor=0D0D0D)
+![Adapt UI](https://img.shields.io/badge/Adapt_UI-LOADED-aaaaaa?style=flat-square&logo=sap&logoColor=aaaaaa&labelColor=0D0D0D)
 
 <br/>
 
-![GitHub Streak](https://streak-stats.demolab.com?user=ameenkhan5256&theme=dark&background=0D0D0D&border=2a2a2a&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=aaaaaa&dates=555555&sideNums=ffffff&currStreakNum=ffffff)
+**Frontend — Interface Layer**
 
-</div>
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## `// 11 — HANDSHAKE.INIT ── CONNECT`
-
-<div align="center">
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  $ ./connect --protocol=open                                        │
-│                                                                     │
-│  > Ping successful. Connection established.                         │
-│  > Specialization : SAP UI5 · Fiori · OData · S/4HANA              │
-│  > Available for  : Full-time · Contract · Remote SAP roles         │
-│  > Location focus : KSA · GCC · Remote                             │
-│  > Status         : OPEN_TO_OPPORTUNITIES = true  ✓                │
-│  > Awaiting your message...  _                                      │
-└─────────────────────────────────────────────────────────────────────┘
-```
+[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,react,angular&theme=dark&perline=6)](https://skillicons.dev)
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D)](https://linkedin.com/in/ameen-ul-hassan-khan-420532284)
-&nbsp;&nbsp;
-[![Email](https://img.shields.io/badge/Send_an_Email-ffffff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D0D0D)](mailto:ameenkhan5256@gmail.com)
-&nbsp;&nbsp;
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0D0D0D)](https://wa.me/966548359561)
+**Backend & Database**
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,python,flask,mongodb,mysql,aws&theme=dark&perline=6)](https://skillicons.dev)
+
+<br/>
+
+**DevOps & Tools**
+
+[![My Skills](https://skillicons.dev/icons?i=git,github,bitbucket,vscode,figma&theme=dark&perline=5)](https://skillicons.dev)
+
+<br/>
+
+**AI / ML — Neural Engines**
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-ACTIVE-aaaaaa?style=flat-square&logo=tensorflow&logoColor=aaaaaa&labelColor=0D0D0D)
+![Keras](https://img.shields.io/badge/Keras-ACTIVE-aaaaaa?style=flat-square&logo=keras&logoColor=aaaaaa&labelColor=0D0D0D)
+![CNN](https://img.shields.io/badge/CNN-ACTIVE-ffffff?style=flat-square&logo=python&logoColor=ffffff&labelColor=0D0D0D)
+![LSTM](https://img.shields.io/badge/LSTM-ACTIVE-ffffff?style=flat-square&logo=python&logoColor=ffffff&labelColor=0D0D0D)
+![XGBoost](https://img.shields.io/badge/XGBoost-ACTIVE-ffffff?style=flat-square&logo=python&logoColor=ffffff&labelColor=0D0D0D)
+![NumPy](https://img.shields.io/badge/NumPy-ACTIVE-aaaaaa?style=flat-square&logo=numpy&logoColor=aaaaaa&labelColor=0D0D0D)
+![Pandas](https://img.shields.io/badge/Pandas-ACTIVE-aaaaaa?style=flat-square&logo=pandas&logoColor=aaaaaa&labelColor=0D0D0D)
+
+---
+
+## 🚀 Projects
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+### RASAD &nbsp; ![Active](https://img.shields.io/badge/ACTIVE-ffffff?style=flat-square&labelColor=0D0D0D)
+**Player Analytics Dashboard**
+
+![SAP UI5](https://img.shields.io/badge/SAP_UI5-ffffff?style=flat-square&logo=sap&logoColor=000000&labelColor=2a2a2a)
+![Fiori](https://img.shields.io/badge/Fiori-aaaaaa?style=flat-square&logo=sap&logoColor=white&labelColor=2a2a2a)
+![ABAP OData](https://img.shields.io/badge/ABAP_OData-ffffff?style=flat-square&labelColor=2a2a2a)
+
+Enterprise analytics dashboard on SAP S/4HANA with real-time OData data pipelines.
+
+- Full **CRUD** + complex Data Binding & View Routing
+- ABAP OData services mapped to responsive XML Views
+- Fiori Design Guidelines — mobile-first enterprise UX
+- Custom validations + advanced OData entity modeling
+
+> ✦ Delivered end-to-end Fiori dashboard centralizing data-driven decision-making
+
+</td>
+<td width="50%" valign="top">
+
+### ENGINE HEALTH AI &nbsp; ![Active](https://img.shields.io/badge/ACTIVE-ffffff?style=flat-square&labelColor=0D0D0D)
+**Predictive Maintenance Tool**
+
+![Python](https://img.shields.io/badge/Python-aaaaaa?style=flat-square&logo=python&logoColor=white&labelColor=2a2a2a)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-ffffff?style=flat-square&logo=tensorflow&logoColor=white&labelColor=2a2a2a)
+![Flask](https://img.shields.io/badge/Flask-aaaaaa?style=flat-square&logo=flask&logoColor=white&labelColor=2a2a2a)
+
+Predictive maintenance system classifying engine faults from live sensor streams.
+
+- Multi-class fault detection via **CNN, LSTM & XGBoost**
+- Real-time anomaly detection from sensor data streams
+- REST API via **Flask** with monitoring interface
+- Reduces vehicle downtime and maintenance cost
+
+> ✦ High-accuracy fault classification enabling proactive maintenance scheduling
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### GAME SPEC PLATFORM &nbsp; ![Complete](https://img.shields.io/badge/COMPLETE-aaaaaa?style=flat-square&labelColor=0D0D0D)
+**Game Metrics Web Portal**
+
+![React](https://img.shields.io/badge/React-aaaaaa?style=flat-square&logo=react&logoColor=white&labelColor=2a2a2a)
+![MongoDB](https://img.shields.io/badge/MongoDB-ffffff?style=flat-square&logo=mongodb&logoColor=white&labelColor=2a2a2a)
+![Node.js](https://img.shields.io/badge/Node.js-aaaaaa?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=2a2a2a)
+
+High-performance portal for browsing and comparing game hardware specifications.
+
+- Advanced **State Management** + dynamic filtering engine
+- MongoDB backend for scalable spec storage
+- Optimized component rendering for cross-device use
+- Responsive design ensuring full mobile compatibility
+
+> ✦ Streamlined lookup speed via optimized data retrieval
+
+</td>
+<td width="50%" valign="top">
+
+### DAIRY FARM MGMT &nbsp; ![Complete](https://img.shields.io/badge/COMPLETE-aaaaaa?style=flat-square&labelColor=0D0D0D)
+**Farm Operations System**
+
+![Angular](https://img.shields.io/badge/Angular-ffffff?style=flat-square&logo=angular&logoColor=white&labelColor=2a2a2a)
+![Oracle DB](https://img.shields.io/badge/Oracle_DB-aaaaaa?style=flat-square&logo=oracle&logoColor=white&labelColor=2a2a2a)
+![TypeScript](https://img.shields.io/badge/TypeScript-ffffff?style=flat-square&logo=typescript&logoColor=white&labelColor=2a2a2a)
+
+Digitization platform replacing manual dairy farm ops with secure role-based control.
+
+- **Component-based** Angular + TypeScript architecture
+- Secure, normalized inventory via Oracle DB
+- Role-based multi-user access control system
+- Interactive dashboards with HTML5 & CSS3
+
+> ✦ Fully digitized farm operations eliminating manual records
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 Skill Matrix
+
+| Module | Score | Level |
+|--------|-------|-------|
+| SAP UI5 / Fiori | `████████████████████░░` | **95 / 100** |
+| OData V2 / V4 | `███████████████████░░░` | **90 / 100** |
+| JavaScript / TypeScript | `███████████████████░░░` | **90 / 100** |
+| Adobe Forms / CDS Views | `█████████████████░░░░░` | **85 / 100** |
+| ABAP / SAP Gateway | `████████████████░░░░░░` | **83 / 100** |
+| React.js / Angular | `████████████████░░░░░░` | **80 / 100** |
+| Python / Deep Learning | `███████████████░░░░░░░` | **75 / 100** |
+| MongoDB / Oracle DB | `█████████████░░░░░░░░░` | **65 / 100** |
+
+---
+
+## 🎓 Education
+
+| Institution | Qualification | Score |
+|-------------|---------------|-------|
+| **Narasaraopeta Engineering College** &nbsp; `2021–2025` | B.Tech — Computer Science Engineering | **8.08 CGPA** ⭐ |
+| **Sri Sai Junior College** &nbsp; `2019` | Intermediate — MPC | **6.60 CGPA** |
+| **Bhashyam High School** &nbsp; `2018` | Secondary School Certificate (SSC) | **9.0 GPA** ⭐ |
+
+---
+
+## 🏆 Certifications
+
+| Issuer | Certification |
+|--------|---------------|
+| Eduskills / AWS | AWS Cloud Virtual Internship ✓ |
+| AICTE / SkillDzire | Artificial Intelligence Short-Term Internship ✓ |
+
+---
+
+## 🎯 Mission Queue
+
+| Task | Description |
+|------|-------------|
+| 🔭 **In Development** | Deepening RASAD — CDS Views, Adobe Forms, and advanced S/4HANA role management workflows |
+| 🌱 **Skill Expansion** | Mastering SAP Fiori Launchpad — Tiles, Catalogs & Groups configuration |
+| ⚡ **Technical Edge** | SAPUI5 Performance Profiling + Enterprise Debugging and Code Inspector techniques |
+| 🤖 **AI Research** | Exploring AI/ML integration within SAP BTP and Fiori extension scenarios |
+
+---
+
+## 📁 Repo Guidelines
+
+**Commit Convention**
+```
+feat(ui):      add responsive filter panel to RASAD dashboard
+fix(odata):    resolve CSRF token error on PATCH requests
+refactor(mvc): split controller logic into service layer
+docs(readme):  update architecture diagram for Engine Health AI
+test(crud):    add unit tests for OData entity set creation
+```
+
+**Branch Strategy**
+```
+main              →  production-ready, protected
+develop           →  integration branch for feature merges
+feature/<name>    →  e.g. feature/rasad-routing-fix
+hotfix/<name>     →  e.g. hotfix/odata-binding-null-check
+```
+
+---
+
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier+Prime&size=15&pause=1200&color=AAAAAA&center=true&vCenter=true&width=700&lines=%3E+PING+successful.+Ready+to+collaborate.;%3E+Channels%3A+LinkedIn+%7C+Email+%7C+GitHub;%3E+Awaiting+your+move...+_)](https://git.io/typing-svg)
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/CONNECT_VIA_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D)](https://linkedin.com/in/ameen-ul-hassan-khan-420532284)
+&nbsp;
+[![Email](https://img.shields.io/badge/SEND_EMAIL-ffffff?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0D0D0D)](mailto:ameenkhan5256@gmail.com)
 
 <br/><br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier+Prime&size=14&pause=1200&color=555555&center=true&vCenter=true&width=700&lines=//+EOF+—+SAP+UI5+%26+Fiori+Developer+%7C+Riyadh%2C+KSA;$+logout+--save-session+%E2%96%88)](https://git.io/typing-svg)
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2e2e2e,50:111111,100:000000&height=140&section=footer&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,50:1a1a1a,100:000000&height=130&section=footer&animation=fadeIn" width="100%"/>
 
 </div>

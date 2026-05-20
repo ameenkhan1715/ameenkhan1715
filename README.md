@@ -39,7 +39,7 @@
 | **Name** | Ameen Ul Hassan Khan |
 | **Location** | Riyadh, Saudi Arabia 🇸🇦 \| India 🇮🇳 |
 | **Role** | SAP UI5 & Fiori Developer |
-| **Employer** | Global Drive IT Solutions |
+| **Employer** | Global Drive Technologies Pvt Limited |
 | **Degree** | B.Tech CSE — 8.08 CGPA |
 | **Institute** | Narasaraopeta Engineering College |
 | **SAP Tools** | BAS · Gateway · S/4HANA · CDS Views |
@@ -56,7 +56,7 @@
 <tr>
 <td>
 
-**Global Drive IT Solutions** &nbsp; ![Active](https://img.shields.io/badge/ACTIVE-ffffff?style=flat-square&labelColor=0D0D0D)
+**Global Drive Technologies Pvt Limited** &nbsp; ![Active](https://img.shields.io/badge/ACTIVE-ffffff?style=flat-square&labelColor=0D0D0D)
 
 **SAP Fiori Developer** &nbsp;·&nbsp; Riyadh, Saudi Arabia &nbsp;·&nbsp; `Feb 2026 — Present`
 

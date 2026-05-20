@@ -44,7 +44,7 @@
 | **Institute** | Narasaraopeta Engineering College |
 | **SAP Tools** | BAS · Gateway · S/4HANA · CDS Views |
 | **AI Stack** | CNN · LSTM · TensorFlow |
-| **Status** | `OPEN_TO_OPPORTUNITIES = true ✓` |
+| **Status** | `FOCUSING` |
 
 <br clear="right"/>
 
